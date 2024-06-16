@@ -1,0 +1,30 @@
+# Comandos Uteis para react-native
+
+# Comandos Basicos para react-native
+
+npx create-expo-app # criar projeto
+npx expo start # Iniciar projeto
+nvm list  # Lista de ambientes instalados do node
+nvm list available  # Lista de ambientes disponiveis para download
+nvm use <version> # Usar versões instaladas
+npx create-expo-app NomeDoMeuAplicativo # Com o layout pre-definido da propio react-native
+npx create-expo-app NomeDoMeuAplicativo --template blank # Baixa apenas os requisitos minimos pro projeto
+
+# Comandos para baixar pacotes e extensões:
+npm install @expo/vector-icons
+npx expo install expo-image-picker
+npm install @react-navigation/native
+npm install @react-navigation/stack
+npx expo install react-native-screens react-native-safe-area-context 
+npm install react-native-paper
+npx expo install react-native view-shot expo-media-library
+npx expo install react-native-gesture-handler react-native-reanimated
+npm prune # Desinstalar depedencias não usadas mais
+
+#TypeScript:
+ npm install --save-dev typescript @types/react @types/react-native
+
+
+
+
+                                                             

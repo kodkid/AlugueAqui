@@ -1,0 +1,5 @@
+# exp
+# react-native Navigation
+# react-native  @expo/vector/icons
+# react-native Paper
+# react-native Fonts

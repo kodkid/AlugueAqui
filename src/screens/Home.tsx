@@ -1,11 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
+import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App({navigation}) {
   return (
     <View style={styles.container}>
       <Text>Tela de Login</Text>
-      <StatusBar style="auto" />
+     
     </View>
   );
 }

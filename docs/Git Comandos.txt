@@ -1,0 +1,18 @@
+# Comandos criar Repositorio
+echo "# AlugueAqui" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/kodkid/AlugueAqui.git
+git push -u origin main
+
+# Push an existing repository from the command line
+
+git remote add origin https://github.com/kodkid/AlugueAqui.git
+git branch -M main
+git push -u origin main
+
+git checkout -- . # Apaga atualizações não commitados
+git pull # Atualiza o repositorio para o ultimo commit 
+git log # verifica todos os commits do repositorio
