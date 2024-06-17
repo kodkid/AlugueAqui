@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, Image, } from 'react-native';
-import { TextInput, Button } from 'react-native-paper';
+import { StyleSheet, View, Image, Text } from 'react-native';
+import { TextInput, Button, } from 'react-native-paper';
 
 const Logo = require('../../assets/images/logo.png');
 
@@ -9,25 +9,33 @@ const Logo = require('../../assets/images/logo.png');
 export default function App({ navigation }) {
   return (
     <View style={styles.container}>
-      <View style={styles.login}>
-        <Image source={Logo} style={styles.logo}></Image>
-        <View style={styles.containerInput}>
-        <TextInput label="E-mail" mode="outlined" />
-        <TextInput label="Senha" mode="outlined"  />
+      <View style={styles.loginPanel}>
+        <View style={styles.containerImage}>
+          <Image source={Logo} style={styles.logo}></Image>
         </View>
-        <Button
-        style={styles.botao}
-        icon="login"
-        mode="elevated"
-        buttonColor="#6a4fa8"
-        textColor="#fff"
-        onPress={() => alert("Botão de login pressionado")}
-      >
-        Login
-      </Button>
+        {/* fim do ContainerImage */}
+        <View style={styles.containerInput}>
+          <TextInput label="E-mail" mode="outlined" />
+          <TextInput label="Senha" mode="outlined" />
+          <Text style={styles.link1}
+            onPress={() => navigation.navigate("Recovery")}> Esqueci a Senha</Text>
+          <Button
+            style={styles.buttom}
+            icon="login"
+            mode="elevated"
+            buttonColor="#008080"
+            textColor="#fff"
+            onPress={() => navigation.navigate("Home")}
+          >
+            Login
+          </Button>
+          <Text style={styles.text}> Não tem conta? <Text style={styles.link2}
+            onPress={() => navigation.navigate("Home")}> Criar Conta</Text></Text>
 
+        </View>
+        {/* fim do ContainerImage */}
       </View>
-
+      {/* fim do Login */}
     </View>
   );
 }
@@ -37,26 +45,55 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     flexDirection: 'column',
-    alignItems: "center",
     justifyContent: "center",
 
+  },
+
+  loginPanel: {
+    flex: 1,
+    marginTop: 16,
+    gap: 10,
+    paddingHorizontal: 16,
 
   },
-  login: {
-    flex: 1/3,
-    justifyContent: 'center'
+
+  containerImage: {
+    alignItems: "center",
+
   },
+
   logo: {
     width: 200,
     height: 200,
     resizeMode: 'contain',
+    alignItems: "center"
+
   },
+
   containerInput: {
-  
+    flex: 1,
+
   },
-   botao: {
-  
+
+  link1: {
+    color: "green",
+    alignSelf: "flex-end",
+
+  },
+
+  buttom: {
     marginTop: 16,
+
+  },
+
+  text: {
+    fontSize: 15,
+
+  },
+
+  link2: {
+    color: "green",
+
   },
 
 });
