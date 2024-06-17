@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 import Login from './src/screens/Login'
+import Recovery from './src/screens/Recovery'
 import Register from './src/screens/Register'
 import Home from './src/screens/Home'
 
@@ -18,6 +19,12 @@ export default function App() {
           name="Login"
           component={Login}
           options={{ title: 'Login' }}
+
+        />
+        <Stack.Screen
+          name="Recovery"
+          component={Recovery}
+          options={{ title: 'Home' }}
 
         />
         <Stack.Screen
