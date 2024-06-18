@@ -6,7 +6,7 @@ const Logo = require('../../assets/images/logo.png');
 
 
 
-export default function App({ navigation }) {
+export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.loginPanel}>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App({ navigation }) {
+export default function Register({ navigation }) {
   return (
     <View style={styles.container}>
       <Text>Tela de Registro</Text>
