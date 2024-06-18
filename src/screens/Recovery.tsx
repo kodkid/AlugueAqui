@@ -3,7 +3,7 @@ import { StyleSheet, View, Alert, Text } from 'react-native';
 import { TextInput, Button, } from 'react-native-paper';
 
 
-export default function App({ navigation }) {
+export default function Recovery({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.text}> Recuperação de conta</Text>
