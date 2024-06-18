@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
   },
 
   link1: {
-    color: "green",
+    color: "#069e6e",
     alignSelf: "flex-end",
 
   },
@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
 
   link2: {
-    color: "green",
+    color: "#069e6e",
 
   },
 

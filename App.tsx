@@ -24,7 +24,7 @@ export default function App() {
         <Stack.Screen
           name="Recovery"
           component={Recovery}
-          options={{ title: 'Home' }}
+          options={{ title: 'Recovery' }}
 
         />
         <Stack.Screen
