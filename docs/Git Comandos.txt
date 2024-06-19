@@ -16,3 +16,10 @@ git push -u origin main
 git checkout -- . # Apaga atualizações não commitados
 git pull # Atualiza o repositorio para o ultimo commit 
 git log # verifica todos os commits do repositorio
+git checkout -b nome-do-branch # Cria um novo branch
+git push origin nome-do-branch # Move o novo branch para o repositorio local
+git checkout nome-do-branch # Muda para o branch selecionado
+git merge novo-feature #Integra as alterações do branch para o projeto
+git branch -d novo-feature # Exclui o branch local
+git push origin --delete novo-feature # Exclui o Branch remoto
+
