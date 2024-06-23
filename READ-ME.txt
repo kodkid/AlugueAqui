@@ -9,6 +9,7 @@ npm install --save-dev typescript @types/react @types/react-native
 
 npx react-native-asset
 npx react-native link
+npx expo install expo-sqlite
 
 
 # Comandos uteis ----------------------------------------------------------------------------------------

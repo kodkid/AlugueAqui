@@ -30,7 +30,7 @@ export default function Login({ navigation }) {
             Login
           </Button>
           <Text style={styles.text}> Não tem conta? <Text style={styles.link2}
-            onPress={() => navigation.navigate("Home")}> Criar Conta</Text></Text>
+            onPress={() => navigation.navigate("Register")}> Criar Conta</Text></Text>
 
         </View>
         {/* fim do ContainerImage */}
