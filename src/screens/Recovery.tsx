@@ -2,12 +2,15 @@ import * as React from 'react';
 import { StyleSheet, View, Alert, Text } from 'react-native';
 import { TextInput, Button, } from 'react-native-paper';
 
+import ComponentTextInput from '../components/ComponentTextInput';
+
 
 export default function Recovery({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.text}> Recuperação de conta</Text>
-            <TextInput label="Email da sua conta" mode="outlined" />
+            <ComponentTextInput placeholder='Email da conta a se recuperar'/>
+           
             <Button
                 style={styles.buttom}
                 icon="login"
@@ -52,7 +55,7 @@ const styles = StyleSheet.create({
     },
 
     buttom: {
-        marginTop: 8,
+        marginTop: 16
 
 
     },

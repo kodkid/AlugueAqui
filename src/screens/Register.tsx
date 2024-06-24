@@ -1,6 +1,7 @@
 import * as React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { TextInput, Button } from "react-native-paper";
+import ComponentTextInput from "../components/ComponentTextInput";
 
 export default function Register({ navigation }) {
   return (
@@ -8,10 +9,12 @@ export default function Register({ navigation }) {
       <View style={styles.registerPanel}>
         <Text style={styles.text1}>Cadastro de conta</Text>
         <Text> Nome Completo</Text>
-        <TextInput label="Nome de usuario" mode="outlined" />
-        <TextInput label="E-mail" mode="outlined" />
-        <TextInput label="Senha" mode="outlined" />
-        <TextInput label="Repita Senha" mode="outlined" />
+        <ComponentTextInput placeholder="Nome de Usuario"/>
+        <ComponentTextInput placeholder="Email"/>
+        <ComponentTextInput placeholder="Senha"/>
+        <ComponentTextInput placeholder="Confirmar Senha"/>
+        
+        
         <Button
           style={styles.buttom}
           icon="login"

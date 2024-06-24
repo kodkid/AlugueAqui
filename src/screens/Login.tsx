@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
-import { TextInput, Button, } from 'react-native-paper';
+import { Button, } from 'react-native-paper';
+
+import ComponentTextInput from '../components/ComponentTextInput';
 
 const Logo = require('../../assets/images/logo.png');
 
@@ -15,8 +17,9 @@ export default function Login({ navigation }) {
         </View>
         {/* fim do ContainerImage */}
         <View style={styles.containerInput}>
-          <TextInput label="E-mail" mode="outlined" />
-          <TextInput label="Senha" mode="outlined" />
+          <ComponentTextInput placeholder='Login' />
+          <ComponentTextInput placeholder='Senha' />
+
           <Text style={styles.link1}
             onPress={() => navigation.navigate("Recovery")}> Esqueci a Senha</Text>
           <Button
@@ -72,6 +75,8 @@ const styles = StyleSheet.create({
 
   containerInput: {
     flex: 1,
+    gap: 6,
+
 
   },
 
