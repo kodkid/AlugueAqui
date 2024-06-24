@@ -2,19 +2,19 @@ import * as React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 import ComponentTextInput from "../components/ComponentTextInput";
-import ComponentText from "../components/ComponentText";
+import ComponentTextTitle from "../components/ComponentText";
 
 export default function Register({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.registerPanel}>
-        <ComponentText title="Digite seu nome completo" />
+        <ComponentTextTitle title="Digite seu nome completo" />
         <ComponentTextInput placeholder="Nome completo" />
-        <ComponentText title="Digite seu e-mail " />
+        <ComponentTextTitle title="Digite seu e-mail " />
         <ComponentTextInput placeholder="e-mail" />
-        <ComponentText title="Digite sua senha " />
+        <ComponentTextTitle title="Digite sua senha " />
         <ComponentTextInput placeholder="Senha" />
-        <ComponentText title="Digite sua senha novamente " />
+        <ComponentTextTitle title="Digite sua senha novamente " />
         <ComponentTextInput placeholder="Confirmar Senha" />
 
         <Button
@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
 
-  
 
   link2: {
     color: "#fbd796",

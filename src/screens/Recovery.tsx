@@ -3,13 +3,12 @@ import { StyleSheet, View, Alert, Text } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 
 import ComponentTextInput from "../components/ComponentTextInput";
+import ComponentTitle from "../components/ComponentTitle"
 
 export default function Recovery({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}> Recuperação de conta</Text>
-      <ComponentTextInput placeholder="Email da conta a se recuperar" />
-
+     <ComponentTitle title="Recuperar conta"/>
       <Button
         style={styles.buttom}
         icon="login"
