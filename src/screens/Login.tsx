@@ -5,7 +5,7 @@ import { Button } from "react-native-paper";
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentText from "../components/ComponentText";
 
-const Logo = require("../../assets/images/logo.png");
+const Logo =require("../../assets/images/alugue-aqui-logo-1.png");
 
 export default function Login({ navigation }) {
   return (

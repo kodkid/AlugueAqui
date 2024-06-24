@@ -3,14 +3,14 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import ComponentTextInput from "../components/ComponentText";
 import ComponentText from "../components/ComponentText";
 
-const Banner = require("../../assets/images/banner.jpg");
+const Logo = require("../../assets/images/alugue-aqui-logo-1.png");
 
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.loginPanel}>
         <View style={styles.containerImage}></View>
-        <Image source={Banner} style={styles.logo}></Image>
+        <Image source={Logo} style={styles.logo}></Image>
       </View>
     </View>
   );

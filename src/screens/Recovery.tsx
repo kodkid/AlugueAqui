@@ -7,14 +7,14 @@ import ComponentTextInput from "../components/ComponentTextInput";
 export default function Recovery({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}> Recuperação de conta</Text>
+      <Text style={styles.title}> Recuperação de conta</Text>
       <ComponentTextInput placeholder="Email da conta a se recuperar" />
 
       <Button
         style={styles.buttom}
         icon="login"
         mode="elevated"
-        buttonColor="#008080"
+        buttonColor="#ffbd59"
         textColor="#fff"
         onPress={() => {
           Alert.alert(
@@ -62,8 +62,8 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
 
-  text: {
+  title: {
     fontSize: 15,
-    color: "#008080",
+    color: "#fbd796",
   },
 });

@@ -21,7 +21,7 @@ export default function Register({ navigation }) {
           style={styles.buttom}
           icon="login"
           mode="elevated"
-          buttonColor="#008080"
+          buttonColor="#ffbd59"
           textColor="#fff"
           onPress={() => navigation.navigate("Home")}
         >
@@ -77,19 +77,10 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
 
-  titulo1: {
-    fontSize: 24,
-    marginTop: 14,
-    color: "#000",
-  },
-  text: {
-    fontSize: 16,
-    marginTop: 14,
-    color: "#000",
-  },
+  
 
   link2: {
-    color: "#069e6e",
+    color: "#fbd796",
   },
   textPanel: {
     alignSelf: "flex-start",
