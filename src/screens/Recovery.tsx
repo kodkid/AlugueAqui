@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { StyleSheet, View, Alert, Text } from 'react-native';
 import { TextInput, Button, } from 'react-native-paper';
 
