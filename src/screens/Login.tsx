@@ -1,11 +1,11 @@
-import { StyleSheet, View, Image, Text } from 'react-native';
-import { Button, } from 'react-native-paper';
+import * as React from "react";
+import { StyleSheet, View, Image, Text } from "react-native";
+import { Button } from "react-native-paper";
 
-import ComponentTextInput from '../components/ComponentTextInput';
+import ComponentTextInput from "../components/ComponentTextInput";
+import ComponentText from "../components/ComponentText";
 
-const Logo = require('../../assets/images/logo.png');
-
-
+const Logo = require("../../assets/images/logo.png");
 
 export default function Login({ navigation }) {
   return (
@@ -16,24 +16,39 @@ export default function Login({ navigation }) {
         </View>
         {/* fim do ContainerImage */}
         <View style={styles.containerInput}>
-          <ComponentTextInput placeholder='Login' />
-          <ComponentTextInput placeholder='Senha' />
+          <ComponentText title="Digite seu email"></ComponentText>
+          <ComponentTextInput placeholder="Login" />
+          <ComponentText title="Digite sua senha"></ComponentText>
+          <ComponentTextInput placeholder="Senha" />
 
-          <Text style={styles.link1}
-            onPress={() => navigation.navigate("Recovery")}> Esqueci a Senha</Text>
+          <Text
+            style={styles.link1}
+            onPress={() => navigation.navigate("Recovery")}
+          >
+            {" "}
+            Esqueci a Senha
+          </Text>
           <Button
             style={styles.buttom}
             icon="login"
             mode="elevated"
-            buttonColor="#008080"
+            buttonColor="#ffbd59"
             textColor="#fff"
             onPress={() => navigation.navigate("Home")}
           >
             Login
           </Button>
-          <Text style={styles.text}> Não tem conta? <Text style={styles.link2}
-            onPress={() => navigation.navigate("Register")}> Criar Conta</Text></Text>
-
+          <Text style={styles.text}>
+            {" "}
+            Não possui uma conta?{" "}
+            <Text
+              style={styles.link2}
+              onPress={() => navigation.navigate("Register")}
+            >
+              {" "}
+              Cadastre-se
+            </Text>
+          </Text>
         </View>
         {/* fim do ContainerImage */}
       </View>
@@ -46,9 +61,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    flexDirection: 'column',
+    flexDirection: "column",
     justifyContent: "center",
-
   },
 
   loginPanel: {
@@ -56,48 +70,38 @@ const styles = StyleSheet.create({
     marginTop: 16,
     gap: 10,
     paddingHorizontal: 16,
-
   },
 
   containerImage: {
     alignItems: "center",
-
   },
 
   logo: {
     width: 200,
     height: 200,
-    resizeMode: 'contain',
-    alignItems: "center"
-
+    resizeMode: "contain",
+    alignItems: "center",
   },
 
   containerInput: {
     flex: 1,
     gap: 6,
-
-
   },
 
   link1: {
-    color: "#069e6e",
+    color: "#fbd796",
     alignSelf: "flex-end",
-
   },
 
   buttom: {
     marginTop: 16,
-
   },
 
   text: {
-    fontSize: 15,
-
+    fontSize: 14,
   },
 
   link2: {
-    color: "#069e6e",
-
+    color: "#fbd796",
   },
-
 });

@@ -1,19 +1,22 @@
+import * as React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 import ComponentTextInput from "../components/ComponentTextInput";
+import ComponentText from "../components/ComponentText";
 
 export default function Register({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.registerPanel}>
-        <Text style={styles.text1}>Cadastro de conta</Text>
-        <Text> Nome Completo</Text>
-        <ComponentTextInput placeholder="Nome de Usuario"/>
-        <ComponentTextInput placeholder="Email"/>
-        <ComponentTextInput placeholder="Senha"/>
-        <ComponentTextInput placeholder="Confirmar Senha"/>
-        
-        
+        <ComponentText title="Digite seu nome completo" />
+        <ComponentTextInput placeholder="Nome completo" />
+        <ComponentText title="Digite seu e-mail " />
+        <ComponentTextInput placeholder="e-mail" />
+        <ComponentText title="Digite sua senha " />
+        <ComponentTextInput placeholder="Senha" />
+        <ComponentText title="Digite sua senha novamente " />
+        <ComponentTextInput placeholder="Confirmar Senha" />
+
         <Button
           style={styles.buttom}
           icon="login"
@@ -24,10 +27,19 @@ export default function Register({ navigation }) {
         >
           Login
         </Button>
-        <Text style={styles.link1} onPress={() => navigation.navigate("Login")}>
-          {" "}
-          Voltar
-        </Text>
+        <View>
+          <Text style={styles.textPanel}>
+            {" "}
+            Já possui uma conta?{" "}
+            <Text
+              style={styles.link2}
+              onPress={() => navigation.navigate("Login")}
+            >
+              {" "}
+              Logar
+            </Text>
+          </Text>
+        </View>
       </View>
     </View>
   );
@@ -65,13 +77,22 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
 
-  text1: {
+  titulo1: {
     fontSize: 24,
+    marginTop: 14,
+    color: "#000",
+  },
+  text: {
+    fontSize: 16,
     marginTop: 14,
     color: "#000",
   },
 
   link2: {
     color: "#069e6e",
+  },
+  textPanel: {
+    alignSelf: "flex-start",
+    padding: 4,
   },
 });
