@@ -15,5 +15,4 @@ npx react-native link
 
 npm prune # Desinstalar depedencias não usadas mais
 
-teste
  
