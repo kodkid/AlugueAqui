@@ -14,4 +14,6 @@ npx react-native link
 # Comandos uteis ----------------------------------------------------------------------------------------
 
 npm prune # Desinstalar depedencias não usadas mais
+
+teste
  
