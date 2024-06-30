@@ -9,10 +9,20 @@ export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.loginPanel}>
-        <View style={styles.containerImage}></View>
+        <View style={styles.containerImage}>
         <Image source={Logo} style={styles.logo}></Image>
+        </View>
+        <View style={styles.contianerLink}>
+
+        <Text style={styles.link}
+          onPress={() => navigation.navigate("CardRegister")}
+        >
+          CardRegister
+        </Text>
+        </View>
       </View>
     </View>
+
   );
 }
 
@@ -31,10 +41,18 @@ const styles = StyleSheet.create({
   containerImage: {
     alignItems: "center",
   },
+  contianerLink: {
+    alignItems: "center",
+
+  },
   logo: {
     width: 300,
     height: 300,
     resizeMode: "contain",
     alignItems: "center",
   },
+  link: {
+    color: "#ffbd59",
+    fontSize: 16,
+    }
 });
