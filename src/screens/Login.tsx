@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import { StyleSheet, View, Image, Text } from "react-native";
 import { Button } from "react-native-paper";
@@ -6,6 +7,7 @@ import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentText from "../components/ComponentText";
 
 const Logo =require("../../assets/images/alugue-aqui-logo-1.png");
+
 
 export default function Login({ navigation }) {
   return (
@@ -16,6 +18,7 @@ export default function Login({ navigation }) {
         </View>
         {/* fim do ContainerImage */}
         <View style={styles.containerInput}>
+
           <ComponentText title="Digite seu email"></ComponentText>
           <ComponentTextInput placeholder="Login" />
           <ComponentText title="Digite sua senha"></ComponentText>
@@ -28,16 +31,20 @@ export default function Login({ navigation }) {
             {" "}
             Esqueci a Senha
           </Text>
+
           <Button
             style={styles.buttom}
             icon="login"
             mode="elevated"
+
             buttonColor="#ffbd59"
+
             textColor="#fff"
             onPress={() => navigation.navigate("Home")}
           >
             Login
           </Button>
+
           <Text style={styles.text}>
             {" "}
             Não possui uma conta?{" "}
@@ -49,6 +56,7 @@ export default function Login({ navigation }) {
               Cadastre-se
             </Text>
           </Text>
+
         </View>
         {/* fim do ContainerImage */}
       </View>
@@ -63,6 +71,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     flexDirection: "column",
     justifyContent: "center",
+
   },
 
   loginPanel: {
@@ -70,31 +79,40 @@ const styles = StyleSheet.create({
     marginTop: 16,
     gap: 10,
     paddingHorizontal: 16,
+
   },
 
   containerImage: {
     alignItems: "center",
+
   },
 
   logo: {
     width: 200,
     height: 200,
+
     resizeMode: "contain",
     alignItems: "center",
+
   },
 
   containerInput: {
     flex: 1,
+
     gap: 6,
   },
 
   link1: {
     color: "#fbd796",
     alignSelf: "flex-end",
+
+
+
   },
 
   buttom: {
     marginTop: 16,
+
   },
 
   text: {
@@ -104,4 +122,6 @@ const styles = StyleSheet.create({
   link2: {
     color: "#fbd796",
   },
+
 });
+

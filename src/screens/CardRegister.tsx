@@ -8,7 +8,7 @@ export default function CardRegister({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.registerPanel}>
-        <ComponentTextTitle title="Digite seu nome completo" />
+        <ComponentTextTitle title="Numero do " />
         <ComponentTextInput placeholder="Nome completo" />
         <ComponentTextTitle title="Digite seu e-mail " />
         <ComponentTextInput placeholder="e-mail" />

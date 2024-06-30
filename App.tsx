@@ -8,7 +8,9 @@ import Login from './src/screens/Login'
 import Recovery from './src/screens/Recovery'
 import Register from './src/screens/Register'
 import Home from './src/screens/Home'
+
 import CardRegister from './src/screens/CardRegister'
+
 
 
 const Stack = createNativeStackNavigator();
@@ -40,12 +42,14 @@ export default function App() {
           options={{ title: 'Home' }}
 
         />
+
          <Stack.Screen
           name="CardRegister"
           component={CardRegister}
           options={{ title: 'CardRegister' }}
 
         />
+
       </Stack.Navigator>
     </NavigationContainer>
 

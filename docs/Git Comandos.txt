@@ -22,6 +22,9 @@ git checkout nome-do-branch # Muda para o branch selecionado
 git merge novo-feature #Integra as alterações do branch para o projeto
 git branch -d novo-feature # Exclui o branch local
 git push origin --delete novo-feature # Exclui o Branch remoto
+<<<<<<< HEAD
 git reset --hard HEAD -- Apaga alterações não commitadas
 git checkout nome-da-branch # altera o branch
+=======
+>>>>>>> 80a56af34680551aef903d322dfd489ba0cb4a36
 

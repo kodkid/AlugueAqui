@@ -9,6 +9,7 @@ export default function Recovery({ navigation }) {
   return (
     <View style={styles.container}>
      <ComponentTitle title="Recuperar conta"/>
+     <ComponentTextInput placeholder="Digite o email da conta a recuperar"/>
       <Button
         style={styles.buttom}
         icon="login"
@@ -65,4 +66,5 @@ const styles = StyleSheet.create({
     fontSize: 15,
     color: "#fbd796",
   },
+
 });

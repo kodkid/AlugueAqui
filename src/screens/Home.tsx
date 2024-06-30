@@ -1,3 +1,4 @@
+
 import * as React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 import ComponentTextInput from "../components/ComponentText";
@@ -5,9 +6,11 @@ import ComponentText from "../components/ComponentText";
 
 const Logo = require("../../assets/images/alugue-aqui-logo-1.png");
 
+
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
+
       <View style={styles.loginPanel}>
         <View style={styles.containerImage}>
         <Image source={Logo} style={styles.logo}></Image>
@@ -22,6 +25,7 @@ export default function Home({ navigation }) {
         </View>
       </View>
     </View>
+
 
   );
 }
@@ -55,4 +59,5 @@ const styles = StyleSheet.create({
     color: "#ffbd59",
     fontSize: 16,
     }
+
 });

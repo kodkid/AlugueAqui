@@ -1,12 +1,15 @@
+
 import * as React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentTextTitle from "../components/ComponentText";
 
+
 export default function Register({ navigation }) {
   return (
     <View style={styles.container}>
+
       <View style={styles.registerPanel}>
         <ComponentTextTitle title="Digite seu nome completo" />
         <ComponentTextInput placeholder="Nome completo" />
@@ -41,6 +44,8 @@ export default function Register({ navigation }) {
           </Text>
         </View>
       </View>
+
+
     </View>
   );
 }
@@ -48,6 +53,7 @@ export default function Register({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+
     backgroundColor: "#fff",
     flexDirection: "column",
     justifyContent: "center",
@@ -84,5 +90,7 @@ const styles = StyleSheet.create({
   textPanel: {
     alignSelf: "flex-start",
     padding: 4,
-  },
-});
+
+}
+}
+);
