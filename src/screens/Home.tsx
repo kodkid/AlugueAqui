@@ -2,6 +2,7 @@ import * as React from "react";
 import { StyleSheet, Text, View, ImageBackground } from "react-native";
 
 import ComponentTextInput from "../components/ComponentTextInput";
+import ComponentTextInputGlass from "../components/ComponentTextInputGlass";
 
 const Logo = require("../../assets/images/alugue-aqui-logo-1.png");
 
@@ -11,7 +12,8 @@ export default function Home({ navigation }) {
       <View style={styles.containerNav}>
         <ImageBackground source={Logo} style={styles.background}>
           <View style={styles.inputPanel}>
-          <ComponentTextInput style={styles.input} placeholder="Pesquisa" />
+            <ComponentTextInputGlass placeholder="Pesquisa"/>
+         
 
           </View>
         </ImageBackground>
@@ -54,10 +56,7 @@ const styles = StyleSheet.create({
 
   input: {
   
-  
 
-
-    
   
 
   },
