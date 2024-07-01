@@ -1,8 +1,9 @@
-import * as React from "react";
+import { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button } from "react-native-paper";
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentTextTitle from "../components/ComponentText";
+
 
 export default function CardRegister({ navigation }) {
     return (

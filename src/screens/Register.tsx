@@ -1,5 +1,4 @@
-
-import * as React from "react";
+import { useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { TextInput, Button } from "react-native-paper";
 import ComponentTextInput from "../components/ComponentTextInput";
