@@ -1,29 +1,25 @@
-
 import * as React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
-import ComponentTextInput from "../components/ComponentText";
-import ComponentText from "../components/ComponentText";
+import { StyleSheet, Text, View, ImageBackground } from "react-native";
+
+import ComponentTextInput from "../components/ComponentTextInput";
 
 const Logo = require("../../assets/images/alugue-aqui-logo-1.png");
-
 
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
+      <View style={styles.containerNav}>
+        <ImageBackground source={Logo} style={styles.background}>
+          <View style={styles.inputPanel}>
+          <ComponentTextInput style={styles.input} placeholder="Pesquisa" />
 
-      <View style={styles.loginPanel}>
-        <View style={styles.containerImage}>
-        <Image source={Logo} style={styles.logo}></Image>
-        </View>
-        <View style={styles.contianerLink}>
-
-        <Text style={styles.link}
-          onPress={() => navigation.navigate("CardRegister")}
-        >
-          CardRegister
-        </Text>
-        </View>
+          </View>
+        </ImageBackground>
       </View>
+      <View style={styles.shopPanel}>
+        < Text> Teste</Text>
+      </View>
+
     </View>
 
 
@@ -36,28 +32,38 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     justifyContent: "center",
   },
-  loginPanel: {
+  containerNav: {
+    flex: 1,
+    height: '100%',
+    paddingHorizontal: 8,
+
+  },
+  background: {
+    resizeMode: "cover",
+    height: '100%',
+    width: "100%",
+  },
+  inputPanel: {
     flex: 1,
     marginTop: 16,
     gap: 10,
     paddingHorizontal: 16,
-  },
-  containerImage: {
-    alignItems: "center",
-  },
-  contianerLink: {
-    alignItems: "center",
+
 
   },
-  logo: {
-    width: 300,
-    height: 300,
-    resizeMode: "contain",
-    alignItems: "center",
-  },
-  link: {
-    color: "#ffbd59",
-    fontSize: 16,
-    }
 
+  input: {
+  
+  
+
+
+    
+  
+
+  },
+  shopPanel: {
+    flex: 1,
+
+
+  }
 });
