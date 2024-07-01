@@ -1,5 +1,4 @@
-
-import * as React from "react";
+import { useState } from "react";
 import { StyleSheet, View, Image, Text } from "react-native";
 import { Button } from "react-native-paper";
 

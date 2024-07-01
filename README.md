@@ -24,11 +24,12 @@ Prepare-se para uma nova era de alocação de máquinas. Prepare-se para AlugueA
 
 # Comandos Até Agora Usados no Projeto
 
-
-` npm install @react-navigation/native @react-navigation/native-stack @expo/vector-icons `
-` npm install react-native-paper `
-` npx expo install react-native-screens react-native-safe-area-context `
-` npm install --save-dev typescript @types/react @types/react-native `
+```bash
+ npm install @react-navigation/native @react-navigation/native-stack @expo/vector-icons 
+ npm install react-native-paper 
+ npx expo install react-native-screens react-native-safe-area-context 
+ npm install --save-dev typescript @types/react @types/react-native 
+ ```
 
 
 

@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import { StyleSheet, Text, View, ImageBackground } from "react-native";
 
 import ComponentTextInput from "../components/ComponentTextInput";
@@ -13,8 +13,6 @@ export default function Home({ navigation }) {
         <ImageBackground source={Logo} style={styles.background}>
           <View style={styles.inputPanel}>
             <ComponentTextInputGlass placeholder="Pesquisa"/>
-         
-
           </View>
         </ImageBackground>
       </View>
