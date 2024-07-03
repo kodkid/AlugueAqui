@@ -31,13 +31,11 @@ Prepare-se para uma nova era de alocação de máquinas. Prepare-se para o **Alu
  npm install react-native-paper 
  ```
  ```
- npx expo install react-native-screens react-native-safe-area-context 
+ npx expo install react-native-screens react-native-safe-area-context expo-router expo-sqlite
+
  ```
  ```
  npm install --save-dev typescript @types/react @types/react-native 
- ```
- ```
- npx expo install expo-router expo-sqlite
  ```
 
 
