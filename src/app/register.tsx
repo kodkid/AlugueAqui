@@ -1,33 +1,39 @@
-import { useState } from "react";
+
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { TextInput, Button } from "react-native-paper";
+import { Button } from "react-native-paper";
+import {  Link, router } from "expo-router";
 import ComponentTextInput from "../components/ComponentTextInput";
-import ComponentTextTitle from "../components/ComponentText";
+import ComponentTitle from "../components/ComponentTitle";
 
 
-export default function Register({ navigation }) {
+export default function Register({ }) {
+  
+  function Registrar(){
+    router.push("/");
+  }
   return (
     <View style={styles.container}>
 
       <View style={styles.registerPanel}>
-        <ComponentTextTitle title="Digite seu nome completo" />
+        <ComponentTitle title="Digite seu nome completo" />
         <ComponentTextInput placeholder="Nome completo" />
-        <ComponentTextTitle title="Digite seu e-mail " />
+        <ComponentTitle title="Digite seu e-mail " />
         <ComponentTextInput placeholder="e-mail" />
-        <ComponentTextTitle title="Digite sua senha " />
+        <ComponentTitle title="Digite sua senha " />
         <ComponentTextInput placeholder="Senha" />
-        <ComponentTextTitle title="Digite sua senha novamente " />
+        <ComponentTitle title="Digite sua senha novamente " />
         <ComponentTextInput placeholder="Confirmar Senha" />
 
         <Button
           style={styles.buttom}
-          icon="login"
+          icon="registered-trademark"
           mode="elevated"
           buttonColor="#ffbd59"
           textColor="#fff"
-          onPress={() => navigation.navigate("Home")}
+          onPress={Registrar}
         >
-          Login
+          Cadastrar
         </Button>
         <View>
           <Text style={styles.textPanel}>
@@ -35,7 +41,7 @@ export default function Register({ navigation }) {
             Já possui uma conta?{" "}
             <Text
               style={styles.link2}
-              onPress={() => navigation.navigate("Login")}
+              onPress={() => router.push("/")}
             >
               {" "}
               Logar

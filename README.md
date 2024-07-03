@@ -1,4 +1,4 @@
-# **AlugueAqui**: Transformando a Forma como Você Aloca Máquinas
+# **AlugueAqui** Transformando a Forma como Você Aloca Máquinas
 
 Imagine uma solução onde encontrar e alugar máquinas para aquela tarefa especial se torna simples como um clique. **AlugueAqui** surge da necessidade de eliminar as barreiras que impedem você de acessar máquinas quando precisar delas, sem o peso de comprá-las para um único uso.
 
@@ -18,7 +18,7 @@ Não é apenas sobre conveniência, mas também sobre criar oportunidades. Com o
 
 Estamos transformando como máquinas são acessadas e compartilhadas. Com **AlugueAqui**, você não apenas economiza tempo e dinheiro, mas também se une a uma comunidade de pessoas que valorizam eficiência e sustentabilidade.
 
-Prepare-se para uma nova era de alocação de máquinas. Prepare-se para **AlugueAqui**.
+Prepare-se para uma nova era de alocação de máquinas. Prepare-se para o **AlugueAqui**.
 
 ---
 
@@ -35,6 +35,9 @@ Prepare-se para uma nova era de alocação de máquinas. Prepare-se para **Alugu
  ```
  ```
  npm install --save-dev typescript @types/react @types/react-native 
+ ```
+ ```
+ npx expo install expo-router
  ```
 
 

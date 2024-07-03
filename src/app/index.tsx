@@ -1,15 +1,16 @@
-import { useState } from "react";
+import React from 'react';
 import { StyleSheet, View, Image, Text } from "react-native";
 import { Button } from "react-native-paper";
+import { useRouter } from "expo-router";
 
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentText from "../components/ComponentText";
 
+const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
 
-const Logo =require("../../assets/images/alugue-aqui-logo-1.png");
+export default function Login({}) {
+  const router = useRouter();
 
-
-export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.loginPanel}>
@@ -18,17 +19,15 @@ export default function Login({ navigation }) {
         </View>
         {/* fim do ContainerImage */}
         <View style={styles.containerInput}>
-
-          <ComponentText title="Digite seu email"></ComponentText>
+          <ComponentText title="Digite seu email"/>
           <ComponentTextInput placeholder="Login" />
-          <ComponentText title="Digite sua senha"></ComponentText>
+          <ComponentText title="Digite sua senha"/>
           <ComponentTextInput placeholder="Senha" />
 
           <Text
             style={styles.link1}
-            onPress={() => navigation.navigate("Recovery")}
+            onPress={() => router.push("/recovery")}
           >
-            {" "}
             Esqueci a Senha
           </Text>
 
@@ -36,27 +35,22 @@ export default function Login({ navigation }) {
             style={styles.buttom}
             icon="login"
             mode="elevated"
-
             buttonColor="#ffbd59"
-
             textColor="#fff"
-            onPress={() => navigation.navigate("Home")}
+            onPress={() => router.push("/home")}
           >
             Login
           </Button>
 
           <Text style={styles.text}>
-            {" "}
             Não possui uma conta?{" "}
             <Text
               style={styles.link2}
-              onPress={() => navigation.navigate("Register")}
+              onPress={() => router.push("register")}
             >
-              {" "}
               Cadastre-se
             </Text>
           </Text>
-
         </View>
         {/* fim do ContainerImage */}
       </View>
@@ -71,57 +65,37 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     flexDirection: "column",
     justifyContent: "center",
-
   },
-
   loginPanel: {
     flex: 1,
     marginTop: 16,
     gap: 10,
     paddingHorizontal: 16,
-
   },
-
   containerImage: {
     alignItems: "center",
-
   },
-
   logo: {
     width: 200,
     height: 200,
-
     resizeMode: "contain",
     alignItems: "center",
-
   },
-
   containerInput: {
     flex: 1,
-
     gap: 6,
   },
-
   link1: {
     color: "#fbd796",
     alignSelf: "flex-end",
-
-
-
   },
-
   buttom: {
     marginTop: 16,
-
   },
-
   text: {
     fontSize: 14,
   },
-
   link2: {
     color: "#fbd796",
   },
-
 });
-

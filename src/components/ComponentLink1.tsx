@@ -6,7 +6,7 @@ interface TextProps {
   onPress: () => void;
 }
 
-const ComponentText: React.FC<TextProps> = ({ title }) => {
+const ComponentLink1: React.FC<TextProps> = ({ title }) => {
   return (
     <View>
       <Text style={styles.text}>{title}</Text>
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ComponentText;
+export default ComponentLink1;

@@ -1,23 +1,23 @@
-import { useState } from "react";
+import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from "react-native";
+import { Link } from 'expo-router';
 
-import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentTextInputGlass from "../components/ComponentTextInputGlass";
+const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
 
-const Logo = require("../../assets/images/alugue-aqui-logo-1.png");
-
-export default function Home({ navigation }) {
+export default function Home({  }) {
   return (
     <View style={styles.container}>
       <View style={styles.containerNav}>
         <ImageBackground source={Logo} style={styles.background}>
           <View style={styles.inputPanel}>
-            <ComponentTextInputGlass placeholder="Pesquisa"/>
+            <ComponentTextInputGlass placeholder="Pesquisa" />
           </View>
         </ImageBackground>
       </View>
       <View style={styles.shopPanel}>
-        < Text> Teste</Text>
+        <Link href={"/cardRegister"}>cardRegister</Link>
+        
       </View>
 
     </View>
@@ -53,9 +53,9 @@ const styles = StyleSheet.create({
   },
 
   input: {
-  
 
-  
+
+
 
   },
   shopPanel: {

@@ -5,7 +5,7 @@ interface TextProps {
   title: string;
 }
 
-const ComponentText: React.FC<TextProps> = ({ title }) => {
+const ComponentTitle: React.FC<TextProps> = ({ title }) => {
   return (
     <View>
       <Text style={styles.title}>{title}</Text>
@@ -15,10 +15,10 @@ const ComponentText: React.FC<TextProps> = ({ title }) => {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 24,
+    fontSize: 20,
     marginTop: 14,
     color: "#ffbd59",
   },
 });
 
-export default ComponentText;
+export default ComponentTitle;
