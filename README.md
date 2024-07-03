@@ -37,7 +37,7 @@ Prepare-se para uma nova era de alocação de máquinas. Prepare-se para o **Alu
  npm install --save-dev typescript @types/react @types/react-native 
  ```
  ```
- npx expo install expo-router
+ npx expo install expo-router expo-sqlite
  ```
 
 
