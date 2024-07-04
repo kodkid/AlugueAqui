@@ -7,7 +7,7 @@ const Banner = require("../../assets/images/banner.jpg");
 const ShopItem1 = require("../../assets/images/shop-item-1.jpg")
 const ShopItem2 = require("./../../assets/images/shop-item-2.jpg")
 
-export default function Home({  }) {
+export default function Home({ }) {
   return (
     <View style={styles.container}>
       <View style={styles.containerNav}>
@@ -16,19 +16,19 @@ export default function Home({  }) {
             <ComponentTextInputGlass placeholder="Pesquisa" />
           </View>
         </ImageBackground>
-      </View> 
+      </View>
       {/* fim do container Nav */}
       <View style={styles.containerShop}>
-          <View style={styles.textPot}>
-        <Text style={styles.text} > Ofertas especiais</Text>
-          </View>
-          <View style={styles.shopPanel}>
-            <View style={styles.boxShop}></View>
-            <Image source={ShopItem2} style={styles.ShopItem}></Image>
-          </View>
-        <Link href={"/cardRegister"}>cardRegister</Link>
+        <View style={styles.textPot}>
+          <Text style={styles.text} > Ofertas especiais</Text>
         </View>
+        <View style={styles.shopPanel}>
+          <View style={styles.boxShop}></View>
+          <Image source={ShopItem2} style={styles.ShopItem}></Image>
+        </View>
+        <Link href={"/cardRegister"}>cardRegister</Link>
       </View>
+    </View>
   );
 }
 
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     gap: 10,
     paddingHorizontal: 16,
     color: "#000",
-    
+
   },
   shopPanel: {
     flex: 1,
@@ -86,6 +86,6 @@ const styles = StyleSheet.create({
   ShopItem: {
     height: 50,
     width: 50,
-    
+
   }
 });

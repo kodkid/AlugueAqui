@@ -2,14 +2,14 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button } from "react-native-paper";
-import {  Link, router } from "expo-router";
+import { Link, router } from "expo-router";
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentTitle from "../components/ComponentTitle";
 
 
 export default function Register({ }) {
-  
-  function Registrar(){
+
+  function Registrar() {
     router.push("/");
   }
   return (
@@ -96,6 +96,6 @@ const styles = StyleSheet.create({
     alignSelf: "flex-start",
     padding: 4,
 
-}
+  }
 }
 );

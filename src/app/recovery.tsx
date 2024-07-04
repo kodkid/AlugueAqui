@@ -13,32 +13,32 @@ export default function Recovery() {
       <ComponentTitle title="Recuperar conta" />
       <ComponentTextInput placeholder="Digite o email da conta a recuperar" />
       <Button
-            style={styles.buttom}
-            icon="login"
-            mode="elevated"
-            buttonColor="#ffbd59"
-            textColor="#fff"
-            onPress={() =>
-              Alert.alert(
-                "Alerta",
-                "Tem certeza que deseja enviar o email?",
-                [
-                  {
-                    text: "Cancelar",
-                    onPress: () => console.log("Cancel Pressed"),
-                    style: "cancel",
-                  },
-                  {
-                    text: "Confirmar",
-                    onPress: () => router.push("/"),
-                  },
-                ],
-                { cancelable: false }
-              )
-            }
-          >
-            Login
-          </Button>
+        style={styles.buttom}
+        icon="login"
+        mode="elevated"
+        buttonColor="#ffbd59"
+        textColor="#fff"
+        onPress={() =>
+          Alert.alert(
+            "Alerta",
+            "Tem certeza que deseja enviar o email?",
+            [
+              {
+                text: "Cancelar",
+                onPress: () => console.log("Cancel Pressed"),
+                style: "cancel",
+              },
+              {
+                text: "Confirmar",
+                onPress: () => router.push("/"),
+              },
+            ],
+            { cancelable: false }
+          )
+        }
+      >
+        Login
+      </Button>
       <Text style={styles.link} onPress={() => router.push("/")}>
         Voltar
       </Text>

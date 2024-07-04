@@ -8,7 +8,7 @@ import ComponentText from "../components/ComponentText";
 
 const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
 
-export default function Login({}) {
+export default function Login({ }) {
   const router = useRouter();
 
   return (
@@ -19,9 +19,9 @@ export default function Login({}) {
         </View>
         {/* fim do ContainerImage */}
         <View style={styles.containerInput}>
-          <ComponentText title="Digite seu email"/>
+          <ComponentText title="Digite seu email" />
           <ComponentTextInput placeholder="Login" />
-          <ComponentText title="Digite sua senha"/>
+          <ComponentText title="Digite sua senha" />
           <ComponentTextInput placeholder="Senha" />
 
           <Text
