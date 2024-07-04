@@ -4,7 +4,7 @@ import { SQLiteProvider, SQLiteProviderProps } from "expo-sqlite";
 
 export default function Layout() {
     return (
-   
+
         <Stack>
             <Stack.Screen name="index" options={{ title: "Bem vindo", }} />
             <Stack.Screen name="register" options={{ title: "Registro", }} />
@@ -13,6 +13,6 @@ export default function Layout() {
             <Stack.Screen name="cardRegister" options={{ title: "Cadastrar cartão", }} />
 
         </Stack>
-       
+
     );
 }

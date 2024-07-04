@@ -1,34 +1,40 @@
 import React from 'react';
-import { StyleSheet, Text, View, ImageBackground } from "react-native";
+import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
 import { Link } from 'expo-router';
 
 import ComponentTextInputGlass from "../components/ComponentTextInputGlass";
-const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
+const Banner = require("../../assets/images/banner.jpg");
+const ShopItem1 = require("../../assets/images/shop-item-1.jpg")
+const ShopItem2 = require("./../../assets/images/shop-item-2.jpg")
 
 export default function Home({  }) {
   return (
     <View style={styles.container}>
       <View style={styles.containerNav}>
-        <ImageBackground source={Logo} style={styles.background}>
+        <ImageBackground source={Banner} style={styles.background}>
           <View style={styles.inputPanel}>
             <ComponentTextInputGlass placeholder="Pesquisa" />
           </View>
         </ImageBackground>
-      </View>
-      <View style={styles.shopPanel}>
+      </View> 
+      {/* fim do container Nav */}
+      <View style={styles.containerShop}>
+          <View style={styles.textPot}>
+        <Text style={styles.text} > Ofertas especiais</Text>
+          </View>
+          <View style={styles.shopPanel}>
+            <View style={styles.boxShop}></View>
+            <Image source={ShopItem2} style={styles.ShopItem}></Image>
+          </View>
         <Link href={"/cardRegister"}>cardRegister</Link>
-        
+        </View>
       </View>
-
-    </View>
-
-
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex: 2,
     backgroundColor: "#fff",
     justifyContent: "center",
   },
@@ -36,7 +42,6 @@ const styles = StyleSheet.create({
     flex: 1,
     height: '100%',
     paddingHorizontal: 8,
-
   },
   background: {
     resizeMode: "cover",
@@ -44,23 +49,43 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   inputPanel: {
-    flex: 1,
     marginTop: 16,
     gap: 10,
     paddingHorizontal: 16,
-
-
   },
-
-  input: {
-
-
-
-
+  containerShop: {
+    flex: 1,
+    height: '100%',
+    justifyContent: "center",
+    alignSelf: "center",
+  },
+  textPot: {
+  },
+  text: {
+    fontWeight: 'bold',
+    fontSize: 24,
+    fontStyle: "italic",
+    marginTop: 16,
+    gap: 10,
+    paddingHorizontal: 16,
+    color: "#000",
+    
   },
   shopPanel: {
     flex: 1,
+    height: '100%',
+    paddingHorizontal: 8,
+    justifyContent: "space-between",
+  },
+  boxShop: {
+    height: 100,
+    width: 100,
+    backgroundColor: "#000",
 
-
+  },
+  ShopItem: {
+    height: 50,
+    width: 50,
+    
   }
 });
