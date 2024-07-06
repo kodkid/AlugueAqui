@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
 import { Link } from "expo-router";
 
 import ComponentTextInputGlass from "../components/ComponentTextInputGlass";
-import ComponentCard from "../components/ComponentCard";
+import ComponentCard from "../components/ComponentCardShop";
 const Banner = require("../../assets/images/banner.jpg");
 const ShopItem1 = require("../../assets/images/shop-item-1.png");
 const ShopItem2 = require("../../assets/images/shop-item-2.png");
