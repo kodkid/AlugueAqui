@@ -5,6 +5,7 @@ import { Button } from "react-native-paper";
 import { Link, router } from "expo-router";
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentTitle from "../components/ComponentTitle";
+import ComponentTextInputPassword from "../components/ComponentTextInputPassword";
 
 
 export default function Register({ }) {
@@ -21,9 +22,9 @@ export default function Register({ }) {
         <ComponentTitle title="Digite seu e-mail " />
         <ComponentTextInput placeholder="e-mail" />
         <ComponentTitle title="Digite sua senha " />
-        <ComponentTextInput placeholder="Senha" />
+        <ComponentTextInputPassword placeholder="Senha"/>
         <ComponentTitle title="Digite sua senha novamente " />
-        <ComponentTextInput placeholder="Confirmar Senha" />
+        <ComponentTextInputPassword placeholder=' Digitar sua senha novamente'/>
 
         <Button
           style={styles.buttom}
@@ -90,7 +91,7 @@ const styles = StyleSheet.create({
 
 
   link2: {
-    color: "#fbd796",
+    color: "#ffbd59",
   },
   textPanel: {
     alignSelf: "flex-start",

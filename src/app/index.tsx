@@ -1,16 +1,16 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from "react-native";
 import { Button } from "react-native-paper";
-import { useRouter } from "expo-router";
+import { router, Link  } from "expo-router";
 
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentText from "../components/ComponentText";
+import ComponentTextInputPassword from '../components/ComponentTextInputPassword';
+import CardRegister from './cardRegister';
 
 const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
 
 export default function Login({ }) {
-  const router = useRouter();
-
   return (
     <View style={styles.container}>
       <View style={styles.loginPanel}>
@@ -22,7 +22,7 @@ export default function Login({ }) {
           <ComponentText title="Digite seu email" />
           <ComponentTextInput placeholder="Login" />
           <ComponentText title="Digite sua senha" />
-          <ComponentTextInput placeholder="Senha" />
+          <ComponentTextInputPassword placeholder='Digite sua senha'/>
 
           <Text
             style={styles.link1}
@@ -55,6 +55,7 @@ export default function Login({ }) {
         {/* fim do ContainerImage */}
       </View>
       {/* fim do Login */}
+      <Link href="cardRegister"> Tela de Screens</Link>
     </View>
   );
 }
@@ -86,7 +87,7 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   link1: {
-    color: "#fbd796",
+    color: "#ffbd59",
     alignSelf: "flex-end",
   },
   buttom: {
@@ -96,6 +97,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   link2: {
-    color: "#fbd796",
+    color: "#ffbd59",
   },
 });

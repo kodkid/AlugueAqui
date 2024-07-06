@@ -28,24 +28,8 @@ export default function Home({}) {
           <Text style={styles.textParagraph}>Os melhores preços</Text>
         </View>
         <View style={styles.shopPanel}>
-          <View style={styles.boxShop}>
-            <View style={styles.imageBox}>
-              <Image source={ShopItem1} style={styles.ShopItem}></Image>
-            </View>
-            {/* fim do imageBox */}
-            <View style={styles.infoItem}>
-              <Text style={styles.titleBoxShop}> Nome do item</Text>
-              <Text style={styles.titleBoxShop}> R$ 40 </Text>
-              <FontAwesome
-                style={styles.icon}
-                name="heart"
-                size={24}
-                color="#ff505A"
-              />
-            </View>
-          </View>
-          {/* fim do shopBox */}
-          
+          <ComponentCard></ComponentCard>
+          <ComponentCard></ComponentCard>
         </View>
         {/* fim do shopPanel */}
       </View>
@@ -109,47 +93,5 @@ const styles = StyleSheet.create({
     gap: 8,
     backgroundColor: "#997",
   },
-  boxShop: {
-    flexDirection: "row",
-    height: 100,
-    width: "100%",
-    backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems: "center",
-    borderWidth: 3,
-    margin: 10,
-  },
-  imageBox: {
-    backgroundColor: "#988",
-    height: 90,
-    width: 75, // Largura da imagem
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  infoItem: {
-    justifyContent: "center",
-    alignSelf: "center",
-    backgroundColor: "#952",
-    height: "100%",
-    width: "auto",
-  },
-  titleBoxShop: {
-    backgroundColor: "#999",
-    height: 18,
-    width: 100, // Largura do texto
-    marginTop: 10,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-
-  ShopItem: {
-    height: 75,
-    width: 75,
-  },
-  icon: {
-    justifyContent: "center",
-    alignSelf: "flex-end",
-    marginHorizontal: 12,
-    marginTop: 4,
-  },
+  
 });
