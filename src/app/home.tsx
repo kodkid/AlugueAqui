@@ -3,15 +3,14 @@ import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
 import { Link } from "expo-router";
 
 import ComponentTextInputGlass from "../components/ComponentTextInputGlass";
-import ComponentCard from "../components/ComponentCardShop";
+import ComponentCardShop from "../components/ComponentCardShop";
 const Banner = require("../../assets/images/banner.jpg");
 const ShopItem1 = require("../../assets/images/shop-item-1.png");
 const ShopItem2 = require("../../assets/images/shop-item-2.png");
 
-import { FontAwesome } from "@expo/vector-icons";
 
 
-export default function Home({}) {
+export default function Home({ }) {
   return (
     <View style={styles.container}>
       <View style={styles.containerNav}>
@@ -28,11 +27,12 @@ export default function Home({}) {
           <Text style={styles.textParagraph}>Os melhores preços</Text>
         </View>
         <View style={styles.shopPanel}>
-          <ComponentCard></ComponentCard>
-          <ComponentCard></ComponentCard>
+
         </View>
         {/* fim do shopPanel */}
       </View>
+      <ComponentCardShop/>
+      {/* fim do Container Shop */}
     </View>
   );
 }
@@ -93,5 +93,5 @@ const styles = StyleSheet.create({
     gap: 8,
     backgroundColor: "#997",
   },
-  
+
 });
