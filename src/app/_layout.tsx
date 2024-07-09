@@ -11,6 +11,7 @@ export default function Layout() {
             <Stack.Screen name="recovery" options={{ title: "Recuperar conta", }} />
             <Stack.Screen name="home" options={{ title: "Loja", }} />
             <Stack.Screen name="cardRegister" options={{ title: "Cadastrar cartão", }} />
+            <Stack.Screen name="pay" options={{ title: "Tela de pagamento", }} />
 
         </Stack>
 

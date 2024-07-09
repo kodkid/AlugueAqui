@@ -56,6 +56,7 @@ export default function Login({ }) {
       </View>
       {/* fim do Login */}
       <Link href="cardRegister"> Tela de Screens</Link>
+      <Link href="pay"> Tela de pagamento</Link>
     </View>
   );
 }
