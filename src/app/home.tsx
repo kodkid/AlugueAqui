@@ -31,7 +31,7 @@ export default function Home({ }) {
         </View>
         {/* fim do shopPanel */}
       </View>
-      <ComponentCardShop/>
+      <ComponentCardShop />
       {/* fim do Container Shop */}
     </View>
   );
