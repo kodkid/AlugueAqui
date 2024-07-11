@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     marginTop: 14,
-    color: "#000",
+    color: "#313131",
   },
 });
 

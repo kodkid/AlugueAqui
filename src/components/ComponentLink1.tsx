@@ -17,7 +17,7 @@ const ComponentLink1: React.FC<TextProps> = ({ title }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 16,
-    color: "#ffbd59",
+    color: "#FFB800",
   },
 });
 

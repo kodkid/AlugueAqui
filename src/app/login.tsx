@@ -26,7 +26,7 @@ export default function Login({ }) {
 
           <Text
             style={styles.link1}
-            onPress={() => router.push("/recovery")}
+            onPress={() => router.push("recovery")}
           >
             Esqueci a Senha
           </Text>
@@ -37,7 +37,7 @@ export default function Login({ }) {
             mode="elevated"
             buttonColor="#ffbd59"
             textColor="#fff"
-            onPress={() => router.push("/home")}
+            onPress={() => router.push("home")}
           >
             Login
           </Button>

@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View } from "react-native";
 import { router, Link } from 'expo-router';
 import { Button } from "react-native-paper";
-import ComponentTitle from "../components/ComponentTitle";
-import ComponentTextInput from "../components/ComponentTextInput";
+import ComponentTitle from "../../components/ComponentTitle"
+import ComponentTextInput from "../../components/ComponentTextInput";
 
 export default function CardRegister({ }) {
     return (

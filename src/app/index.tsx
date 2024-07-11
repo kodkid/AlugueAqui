@@ -5,6 +5,7 @@ import {
   ImageBackground,
   Image,
   Pressable,
+  Text
 } from "react-native";
 import { Button } from "react-native-paper";
 import { router, Link } from "expo-router";
@@ -13,12 +14,13 @@ const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
 const Bg = require("../../assets/images/index-bg.jpg");
 
 const NavigateLogin = () => {
-  router.push("/login");
+  router.push("login");
 };
 
 export default function Login({}) {
   return (
     <ImageBackground source={Bg} style={styles.container}>
+      <Text> Texto</Text>
       <View style={styles.container}>
         <View style={styles.containerIndex}>
           <View style={styles.potImage}>
@@ -30,7 +32,7 @@ export default function Login({}) {
           </View>
           <View style={styles.potButtom}>
             <Pressable onPress={NavigateLogin}>
-              <Link href={"/login"}> Entrar</Link>
+              <Link href={"login"}> Entrar</Link>
             </Pressable>
           </View>
         </View>

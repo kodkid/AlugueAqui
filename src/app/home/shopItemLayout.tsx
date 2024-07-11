@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image, View, Text , StyleSheet } from "react-native";
 
-const ShopItem1 = require('../../assets/images/shop-item-1.png')
+const ShopItem1 = require('../../../assets/images/shop-item-1.png')
 
 
 
