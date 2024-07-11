@@ -3,11 +3,10 @@ import { View, Text, Image, StyleSheet } from "react-native";
 import ComponentTitle2 from '../components/ComponentTitle2';
 import ComponentTitle from '../components/ComponentTitle';
 
-const Boleto = require('../../assets/images/boleto.png')
+const Boleto = require('./../../assets/images/boleto.png')
 const Cartao = require('../../assets/images/cartao.png')
 const Qrcode = require('../../assets/images/qrcode.png')
 const Pix = require('../../assets/images/pix.png')
-
 export default function () {
     return(
     <View style={styles.container}>
