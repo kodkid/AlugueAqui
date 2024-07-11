@@ -33,7 +33,7 @@ export default function CardRegister({ }) {
                     style={styles.button}
                     icon="registered-trademark"
                     mode="elevated"
-                    buttonColor="#ffbd59"
+                    buttonColor="#FFB800"
                     textColor="#fff"
                     onPress={() => router.push("/")}
                 >
@@ -82,6 +82,6 @@ const styles = StyleSheet.create({
         marginTop: 16,
     },
     link: {
-        color: "#fbd796",
+        color: "##FFB800",
     },
 });

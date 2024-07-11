@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     marginHorizontal: 16,
     justifyContent: "center",
-    alignItems: "center",
+
     gap: 2,
   },
   buttom: {

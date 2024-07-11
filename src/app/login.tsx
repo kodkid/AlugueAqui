@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text } from "react-native";
+import { StyleSheet, View, Image, Text, StatusBar } from "react-native";
 import { Button } from "react-native-paper";
 import { router, Link  } from "expo-router";
 
@@ -8,11 +8,14 @@ import ComponentText from "../components/ComponentText";
 import ComponentTextInputPassword from '../components/ComponentTextInputPassword';
 
 
+
 const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
 
 export default function Login({ }) {
   return (
+   
     <View style={styles.container}>
+       <StatusBar backgroundColor="#FFB800" barStyle={"light-content"}/>
       <View style={styles.loginPanel}>
         <View style={styles.containerImage}>
           <Image source={Logo} style={styles.logo}></Image>
@@ -46,7 +49,7 @@ export default function Login({ }) {
             Não possui uma conta?{" "}
             <Text
               style={styles.link2}
-              onPress={() => router.push("register")}
+              onPress={() => router.push("/register")}
             >
               Cadastre-se
             </Text>
@@ -55,8 +58,6 @@ export default function Login({ }) {
         {/* fim do ContainerImage */}
       </View>
       {/* fim do Login */}
-      <Link href="cardRegister"> Tela de Screens</Link>
-      <Link href="pay"> Tela de pagamento</Link>
     </View>
   );
 }

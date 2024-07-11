@@ -5,7 +5,8 @@ import {
   ImageBackground,
   Image,
   Pressable,
-  Text
+  Text,
+  StatusBar
 } from "react-native";
 import { Button } from "react-native-paper";
 import { router, Link } from "expo-router";
@@ -17,7 +18,7 @@ const NavigateLogin = () => {
   router.push("login");
 };
 
-export default function Login({}) {
+export default function Index({}) {
   return (
     <ImageBackground source={Bg} style={styles.container}>
       <View style={styles.container}>
@@ -45,23 +46,27 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+   
   },
   containerIndex: {
     justifyContent: "center",
-    alignItems: "center",
     height: "60%",
-    width: "75%",
+    width: 395,
     backgroundColor: "#fff",
-    borderColor: "#999",
+    marginTop: 32,
     borderWidth: 2,
     borderRadius: 16,
+    borderColor: "#999"
+  
   },
   potImage: {
+    flex: 1/3,
     alignItems: "center",
-    backgroundColor: "#999",
+ 
     marginEnd: 8,
   },
   potTitle: {
+    flex: 2/3 ,
     justifyContent: "center",
     alignItems: "center",
     marginEnd: 8,
@@ -73,12 +78,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   potButtom: {
+    justifyContent: "center",
+    alignItems: "center",
     gap: 4,
     margin: 16,
     marginEnd: 16,
-    backgroundColor: "#999",
-    justifyContent: "center",
-    alignItems: "center",
+    borderWidth: 2,
+    borderRadius: 16,
   },
   buttom: {},
 });
