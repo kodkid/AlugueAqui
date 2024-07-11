@@ -30,7 +30,7 @@ export default function Register({ }) {
           style={styles.buttom}
           icon="registered-trademark"
           mode="elevated"
-          buttonColor="#ffbd59"
+          buttonColor="#FFB800"
           textColor="#fff"
           onPress={Registrar}
         >

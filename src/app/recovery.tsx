@@ -16,7 +16,7 @@ export default function Recovery() {
         style={styles.buttom}
         icon="login"
         mode="elevated"
-        buttonColor="#ffbd59"
+        buttonColor="#FFB800"
         textColor="#fff"
         onPress={() =>
           Alert.alert(

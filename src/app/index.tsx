@@ -20,7 +20,6 @@ const NavigateLogin = () => {
 export default function Login({}) {
   return (
     <ImageBackground source={Bg} style={styles.container}>
-      <Text> Texto</Text>
       <View style={styles.container}>
         <View style={styles.containerIndex}>
           <View style={styles.potImage}>

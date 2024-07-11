@@ -35,7 +35,7 @@ export default function Login({ }) {
             style={styles.buttom}
             icon="login"
             mode="elevated"
-            buttonColor="#ffbd59"
+            buttonColor="#FFB800"
             textColor="#fff"
             onPress={() => router.push("home")}
           >
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   link1: {
-    color: "#ffbd59",
+    color: "#FFB800",
     alignSelf: "flex-end",
   },
   buttom: {
@@ -98,6 +98,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   link2: {
-    color: "#ffbd59",
+    color: "#FFB800",
   },
 });
