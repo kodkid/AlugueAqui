@@ -1,9 +1,12 @@
 import React from "react";
 import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
-import { Link } from "expo-router";
+import { router } from "expo-router";
+import { Button } from "react-native-paper";
+
 
 import ComponentTextInputGlass from "../../components/ComponentTextInputGlass";
-import ComponentHamburguerButton from "../../components/ComponentHamburguerButton";
+
+
 const ShopItem1 = require("../../../assets/images/shop-item-1.png");
 const ShopItem2 = require("../../../assets/images/shop-item-2.png");
 
@@ -12,6 +15,8 @@ const ShopItem2 = require("../../../assets/images/shop-item-2.png");
 export default function Home({ }) {
   return (
     <View style={styles.container}>
+
+
       <Text> Tela home</Text>
 
     </View>

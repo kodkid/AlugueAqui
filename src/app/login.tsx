@@ -1,11 +1,12 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text, StatusBar } from "react-native";
+import { StyleSheet, View, Image, Text, StatusBar, } from "react-native";
 import { Button } from "react-native-paper";
-import { router, Link  } from "expo-router";
+import { router  } from "expo-router";
 
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentText from "../components/ComponentText";
 import ComponentTextInputPassword from '../components/ComponentTextInputPassword';
+
 
 
 
@@ -17,6 +18,7 @@ export default function Login({ }) {
     <View style={styles.container}>
        <StatusBar backgroundColor="#FFB800" barStyle={"light-content"}/>
       <View style={styles.loginPanel}>
+        
         <View style={styles.containerImage}>
           <Image source={Logo} style={styles.logo}></Image>
         </View>

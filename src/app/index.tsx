@@ -5,10 +5,7 @@ import {
   ImageBackground,
   Image,
   Pressable,
-  Text,
-  StatusBar
 } from "react-native";
-import { Button } from "react-native-paper";
 import { router, Link } from "expo-router";
 import ComponentTitle2 from "../components/ComponentTitle2";
 const Logo = require("../../assets/images/alugue-aqui-logo-2.png");

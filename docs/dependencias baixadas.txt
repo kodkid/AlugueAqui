@@ -3,3 +3,6 @@
 # react-native  @expo/vector/icons
 # react-native Paper
 # react-native Fonts
+
+@ Deletadas:
+npm install react-native-dropdown-picker
