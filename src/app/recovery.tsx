@@ -30,7 +30,7 @@ export default function Recovery() {
               },
               {
                 text: "Confirmar",
-                onPress: () => router.push("/"),
+                onPress: () => router.push("/login"),
               },
             ],
             { cancelable: false }
@@ -39,7 +39,7 @@ export default function Recovery() {
       >
         Login
       </Button>
-      <Text style={styles.link} onPress={() => router.push("/")}>
+      <Text style={styles.link} onPress={() => router.push("/login")}>
         Voltar
       </Text>
     </View>

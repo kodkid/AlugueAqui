@@ -11,7 +11,7 @@ import ComponentTextInputPassword from "../components/ComponentTextInputPassword
 export default function Register({ }) {
 
   function Registrar() {
-    router.push("/");
+    router.push("/login");
   }
   return (
     <View style={styles.container}>
@@ -42,7 +42,7 @@ export default function Register({ }) {
             Já possui uma conta?{" "}
             <Text
               style={styles.link2}
-              onPress={() => router.push("/")}
+              onPress={() => router.push("/login")}
             >
               {" "}
               Logar

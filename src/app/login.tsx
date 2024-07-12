@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text, StatusBar, } from "react-native";
 import { Button } from "react-native-paper";
-import { router  } from "expo-router";
+import { router , Redirect  } from "expo-router";
 
 import ComponentTextInput from "../components/ComponentTextInput";
 import ComponentText from "../components/ComponentText";
@@ -12,6 +12,9 @@ import ComponentTextInputPassword from '../components/ComponentTextInputPassword
 
 const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
 
+const RedirecionamentoHome = () => (
+  router.push("/(drawer)/home")
+);
 export default function Login({ }) {
   return (
    
@@ -42,7 +45,7 @@ export default function Login({ }) {
             mode="elevated"
             buttonColor="#FFB800"
             textColor="#fff"
-            onPress={() => router.push("home")}
+            onPress={RedirecionamentoHome}
           >
             Login
           </Button>
