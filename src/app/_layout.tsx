@@ -11,6 +11,7 @@ export default function Layout() {
             <Stack.Screen name="login" options={{ title: "Login", }} />
             <Stack.Screen name="recovery" options={{ title: "Tela de recuperação", }} />
             <Stack.Screen name="register" options={{ title: "Tela de registro", }} />
+            <Stack.Screen name="(drawer)" options={{ title: "Home", headerShown: false }} />
             </Stack>   
         </SQLiteProvider>
 

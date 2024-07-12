@@ -19,7 +19,7 @@ export default function Home({ }) {
         headerShown: true,
         headerLeft: () => <DrawerToggleButton />,
       }} />
-      <Text> Tela home</Text>
+      <Text style={styles.text}> Tela home</Text>
 
     </View>
   );
@@ -30,6 +30,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     justifyContent: "center",
+    alignItems:"center",
   },
+  text: {
+    fontSize: 24,
+    color: "#313131"
+  }
+
 
 });
