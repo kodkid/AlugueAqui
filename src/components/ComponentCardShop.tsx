@@ -6,7 +6,7 @@ const ComponentCardItem = () => (
     title="Card Title"
     subtitle="Card Subtitle"
     left={(props) => <Avatar.Icon {...props} icon="folder" />}
-    right={(props) => <IconButton {...props} icon="dots-vertical" onPress={() => {}} />}
+    right={(props) => <IconButton {...props} icon="dots-vertical" onPress={() => { }} />}
   />
 );
 

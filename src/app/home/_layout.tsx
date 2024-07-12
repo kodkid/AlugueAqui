@@ -10,7 +10,7 @@ export default function Layout() {
             <Stack.Screen name="/cardRegister" options={{ title: "Cadastrar cartão", }} />
             <Stack.Screen name="/pay" options={{ title: "Tela de pagamento", }} />
             <Stack.Screen name="/shopItemLayout" options={{ title: "Tela de informação do produto", }} />
-            
+            <Stack.Screen name="Tab" options={{ title: 'Tab' }} />
         </Stack>
 
     );

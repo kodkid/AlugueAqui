@@ -13,8 +13,8 @@ const ComponentTextInputPassword: React.FC<ComponentTextInputProps> = ({
 
   return (
     <TextInput
-    placeholder={placeholder}
-       mode="outlined"
+      placeholder={placeholder}
+      mode="outlined"
       secureTextEntry
       right={<TextInput.Icon icon="eye" />}
       outlineColor="#999"

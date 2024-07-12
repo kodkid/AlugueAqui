@@ -1,16 +1,25 @@
 import { Drawer } from "expo-router/drawer"
 
+
 export default function TabLayout() {
     return (
-        <Drawer screenOptions={{
-            headerShown: false
-        }}>
+        <Drawer screenOptions={{ headerShown: true }}>
             <Drawer.Screen name="index"
-                options={{ title: "Carrinho de compras" }} />
+                options={{
+                    drawerLabel: "Carrinho de compra",
+                    title: "Carrinho de compras"
+                }} />
             <Drawer.Screen name="acompanhamento"
-                options={{ title: "Acompanhamento" }} />
-                <Drawer.Screen name="Configuracoes"
-                options={{ title: "configuracoes" }} />     
+                options={{
+                    drawerLabel: "acompanhamento",
+                    title: "acompanhamento"
+                }} />
+            <Drawer.Screen name="configuracoes"
+                options={{
+                    drawerLabel: "configuracoes",
+                    title: "configuracoes"
+                }} />
+
 
         </Drawer>
     )

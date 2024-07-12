@@ -1,4 +1,4 @@
-import  React from 'react';
+import React from 'react';
 import { Card } from 'react-native-paper';
 
 const ImageItem1 = require("../../assets/images/shop-item-1.png")
