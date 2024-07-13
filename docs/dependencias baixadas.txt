@@ -5,6 +5,7 @@
 # react-native Fonts
 # npm install @react-navigation/drawer
 # npm install react-native-gesture-handler react-native-reanimated
+# npm install --save react-native-ratings
 
 @ Deletadas:
 npm install react-native-dropdown-picker

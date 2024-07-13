@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { Drawer } from "expo-router/drawer";
 import { DrawerToggleButton } from "@react-navigation/drawer"
 
-import ComponentSeachBar from "../../components/ComponentSeachBar"
+import ComponentSeachBar from "../../components/ComponentTextInputGlass"
 
 export default function Carrinho() {
     return (
@@ -11,7 +11,7 @@ export default function Carrinho() {
             <Drawer.Screen options={{
                 headerShown: true,
                 headerLeft: () => <DrawerToggleButton />,
-                headerRight: () => <ComponentSeachBar />,
+                headerRight: () => <ComponentSeachBar placeholder="Ola"/>,
              }} />
             <Text> Tela de carrinho</Text>
         </View>

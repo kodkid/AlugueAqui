@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
 import { router, } from "expo-router";
 import { Drawer } from "expo-router/drawer";
-import { DrawerToggleButton ,} from "@react-navigation/drawer"
+import { DrawerToggleButton, } from "@react-navigation/drawer"
 
 import ComponentCardBoxShop from "../../../components/ComponentCardIBoxShop";
 import ComponentTitle from "../../../components/ComponentTitle";
@@ -17,14 +17,14 @@ export default function Home({ }) {
         headerLeft: () => <DrawerToggleButton />,
       }} />
       <View style={styles.potTitle}>
-      <ComponentTitle title="Ofertas em destaque"/>
-      <ComponentText title=" os melhores preço"/>
+        <ComponentTitle title="Ofertas em destaque" />
+        <ComponentText title=" os melhores preços" />
       </View>
       {/* Final do potTitle*/}
       <View style={styles.potCard}>
-      <ComponentCardBoxShop/>
-      <ComponentCardBoxShop/>
-      <ComponentCardBoxShop/>
+        <ComponentCardBoxShop />
+        <ComponentCardBoxShop />
+        <ComponentCardBoxShop />
       </View>
       {/* Final do potCard*/}
     </View>
@@ -40,14 +40,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     gap: 8,
     padding: 4,
-    
+
   },
   potTitle: {
     justifyContent: "center",
   },
   potCard: {
-    justifyContent:"center",
-    backgroundColor: "#999",
+    justifyContent: "center",
     gap: 8,
     padding: 4,
 
