@@ -23,6 +23,8 @@ export default function Home({ }) {
       {/* Final do potTitle*/}
       <View style={styles.potCard}>
       <ComponentCardBoxShop/>
+      <ComponentCardBoxShop/>
+      <ComponentCardBoxShop/>
       </View>
       {/* Final do potCard*/}
     </View>
@@ -45,7 +47,9 @@ const styles = StyleSheet.create({
   },
   potCard: {
     justifyContent:"center",
-    backgroundColor: "#995"
+    backgroundColor: "#999",
+    gap: 8,
+    padding: 4,
 
   }
 
