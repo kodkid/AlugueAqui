@@ -2,14 +2,11 @@ import React from "react";
 import { StyleSheet, Text, View, ImageBackground, Image } from "react-native";
 import { router, } from "expo-router";
 import { Drawer } from "expo-router/drawer";
-import { DrawerToggleButton } from "@react-navigation/drawer"
-import { Button } from "react-native-paper";
+import { DrawerToggleButton ,} from "@react-navigation/drawer"
 
-import ComponentTextInputGlass from "../../../components/ComponentTextInputGlass";
-
-const ShopItem1 = require("../../../../assets/images/shop-item-1.png");
-const ShopItem2 = require("../../../../assets/images/shop-item-2.png");
-
+import ComponentCardBoxShop from "../../../components/ComponentCardIBoxShop";
+import ComponentTitle from "../../../components/ComponentTitle";
+import ComponentText from "../../../components/ComponentText";
 
 
 export default function Home({ }) {
@@ -19,8 +16,15 @@ export default function Home({ }) {
         headerShown: true,
         headerLeft: () => <DrawerToggleButton />,
       }} />
-      <Text style={styles.text}> Tela home</Text>
-
+      <View style={styles.potTitle}>
+      <ComponentTitle title="Ofertas em destaque"/>
+      <ComponentText title=" os melhores preço"/>
+      </View>
+      {/* Final do potTitle*/}
+      <View style={styles.potCard}>
+      <ComponentCardBoxShop/>
+      </View>
+      {/* Final do potCard*/}
     </View>
   );
 }
@@ -29,13 +33,20 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    justifyContent: "center",
-    alignItems:"center",
+    justifyContent: "flex-start",
+    paddingTop: 16,
+    paddingHorizontal: 8,
+    gap: 8,
+    padding: 4,
+    
   },
-  text: {
-    fontSize: 24,
-    color: "#313131"
-  }
+  potTitle: {
+    justifyContent: "center",
+  },
+  potCard: {
+    justifyContent:"center",
+    backgroundColor: "#995"
 
+  }
 
 });
