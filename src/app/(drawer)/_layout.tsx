@@ -1,6 +1,6 @@
 import { DrawerToggleButton } from "@react-navigation/drawer"
 import { Drawer } from "expo-router/drawer"
-import { MaterialIcons , Ionicons , FontAwesome6 } from '@expo/vector-icons';
+import { MaterialIcons, Ionicons, FontAwesome6 } from '@expo/vector-icons';
 
 
 export default function TabLayout() {

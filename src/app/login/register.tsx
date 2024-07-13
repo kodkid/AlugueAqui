@@ -22,9 +22,9 @@ export default function Register({ }) {
         <ComponentTitle title="Digite seu e-mail " />
         <ComponentTextInput placeholder="e-mail" />
         <ComponentTitle title="Digite sua senha " />
-        <ComponentTextInputPassword placeholder="Senha"/>
+        <ComponentTextInputPassword placeholder="Senha" />
         <ComponentTitle title="Digite sua senha novamente " />
-        <ComponentTextInputPassword placeholder=' Digitar sua senha novamente'/>
+        <ComponentTextInputPassword placeholder=' Digitar sua senha novamente' />
 
         <Button
           style={styles.buttom}
