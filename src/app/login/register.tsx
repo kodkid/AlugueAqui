@@ -3,9 +3,9 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Button } from "react-native-paper";
 import { Link, router } from "expo-router";
-import ComponentTextInput from "../components/ComponentTextInput";
-import ComponentTitle from "../components/ComponentTitle";
-import ComponentTextInputPassword from "../components/ComponentTextInputPassword";
+import ComponentTextInput from "../../components/ComponentTextInput";
+import ComponentTitle from "../../components/ComponentTitle";
+import ComponentTextInputPassword from "../../components/ComponentTextInputPassword";
 
 
 export default function Register({ }) {

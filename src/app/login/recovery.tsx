@@ -3,8 +3,8 @@ import { StyleSheet, View, Alert, Text } from "react-native";
 import { Button } from "react-native-paper";
 import { router } from "expo-router";
 
-import ComponentTitle from "../components/ComponentTitle";
-import ComponentTextInput from "../components/ComponentTextInput";
+import ComponentTitle from "../../components/ComponentTitle";
+import ComponentTextInput from "../../components/ComponentTextInput";
 
 export default function Recovery() {
 

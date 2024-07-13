@@ -7,11 +7,9 @@ export default function Layout() {
     return (
         <SQLiteProvider databaseName='alugueaqui.db' onInit={startDb}>
             <Stack>
-            <Stack.Screen name="index" options={{ title: "Bem vIndo",  }} />
-            <Stack.Screen name="login" options={{ title: "Login", }} />
-            <Stack.Screen name="recovery" options={{ title: "Tela de recuperação", }} />
-            <Stack.Screen name="register" options={{ title: "Tela de registro", }} />
-            <Stack.Screen name="(drawer)" options={{ title: "Home", headerShown: false }} />
+            <Stack.Screen name="index" options={{ title: "Bem vIndo", headerShown: false }} />
+            <Stack.Screen name="login" options={{ title: "Bem vIndo", headerShown: false  }} />
+            <Stack.Screen name="(drawer)" options={{ title: "Bem vIndo", headerShown: false  }} />
             </Stack>   
         </SQLiteProvider>
 
