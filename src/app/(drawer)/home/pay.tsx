@@ -38,7 +38,9 @@ export default function () {
                     <Pressable onPress={navBoleto} accessible={true} accessibilityLabel="Navegar para Boleto">
                         <View style={styles.boximage}>
                             <Image source={Boleto} style={styles.image} resizeMode="contain" />
-                            <ComponentTitle3 title='Boleto' />
+                            <View style={styles.centerText}>
+                                <ComponentTitle3 title='Boleto' />
+                            </View>
                         </View>
                     </Pressable>
                 </View>
@@ -47,7 +49,12 @@ export default function () {
                     <View style={styles.boximage}>
                         <Pressable onPress={navCard} accessible={true} accessibilityLabel="Navegar para O Cartão">
                             <Image source={Cartao} style={styles.image} resizeMode="contain" />
-                            <ComponentTitle3 title='Cartão' />
+
+                            <View style={styles.centerText}>
+                                <View style={styles.centerText}>
+                                    <ComponentTitle3 title='Cartão' />
+                                </View>
+                            </View>
                         </Pressable>
                     </View>
                 </View>
@@ -63,7 +70,9 @@ export default function () {
                     <View style={styles.boximage}>
                         <Pressable onPress={navPix} accessible={true} accessibilityLabel="Navegar para Pix">
                             <Image source={Pix} style={styles.image} resizeMode="contain" />
-                            <ComponentTitle3 title='Pix' />
+                            <View style={styles.centerText}>
+                                <ComponentTitle3 title='Pix' />
+                            </View>
                         </Pressable>
                     </View>
                 </View>
@@ -108,4 +117,8 @@ const styles = StyleSheet.create({
         height: 100,
         width: 100,
     },
+    centerText: {
+        justifyContent: 'center',
+        alignItems: "center",
+    }
 });

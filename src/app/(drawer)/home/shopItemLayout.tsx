@@ -2,7 +2,10 @@ import React from 'react';
 import { Image, View, StyleSheet, TouchableOpacity, Dimensions } from "react-native";
 import { Drawer } from "expo-router/drawer";
 import { DrawerToggleButton } from "@react-navigation/drawer";
+import { Button } from 'react-native-paper';
 import { AntDesign } from '@expo/vector-icons';
+import ComponentCardShop from '../../../components/ComponentCardShop';
+import { router } from 'expo-router';
 
 const ShopItem1 = require("../../../../assets/icon.png");
 
@@ -30,6 +33,16 @@ export default function ShopItemLayout() {
                     </TouchableOpacity>
                 </View>
             </View>
+            <ComponentCardShop />
+            <Button
+            icon="login"
+            mode="elevated"
+            buttonColor="#FFB800"
+            textColor="#fff"
+            onPress={() => router.push("home/pay")}
+          >
+            Login
+          </Button>
         </View>
     );
 }
