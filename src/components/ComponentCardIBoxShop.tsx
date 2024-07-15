@@ -1,7 +1,10 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { Link } from 'expo-router';
 import { Avatar, Card, Text, Icon, MD3Colors } from 'react-native-paper';
 import { AirbnbRating } from 'react-native-ratings';
+
+//    <Text style={styles.title} variant="displaySmall">Nome do item</Text>
 
 
 
@@ -22,7 +25,7 @@ const ComponentCardBoxShop: React.FC = () => (
         <Card.Cover source={ComponentIcon} style={styles.cover} />
       </View>
       <View style={styles.rightContent}>
-        <Text style={styles.title} variant="displaySmall">Nome do item</Text>
+        <Link style={styles.title} href={"home/pay"}> Nome do item</Link>
         <Text style={styles.price} variant="bodyMedium">R$ 0,00</Text>
         <Text style={styles.time} variant='bodySmall'>por dia</Text>
         <Card.Actions style={styles.actions}>
