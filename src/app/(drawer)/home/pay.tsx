@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, Pressable } from 'react-native';
+import { router } from "expo-router";
 import { Drawer } from 'expo-router/drawer';
 import { DrawerToggleButton } from '@react-navigation/drawer';
 
@@ -10,6 +11,12 @@ const Boleto = require('../../../../assets/images/boleto.png');
 const Cartao = require('../../../../assets/images/cartao.png');
 const Qrcode = require('../../../../assets/images/qrcode.png');
 const Pix = require('../../../../assets/images/pix.png');
+
+
+const navBoleto = () => router.push("home/boleto");
+const navCard = () => router.push("cardRegister");
+const navQrcode = () => router.push("qrcode");
+const navPix = () => router.push("pix")
 
 export default function () {
     return (
@@ -23,31 +30,35 @@ export default function () {
             <View style={styles.containerText}>
                 <ComponentTitle1 title="Selecione o método de " />
                 <ComponentTitle1 title="pagamento" />
+
             </View>
             {/* Fim do containerText */}
             <View style={styles.containerImage}>
                 <View style={styles.cardImage}>
-                    <View style={styles.boximage}>
-                        <Image source={Boleto} style={styles.image} resizeMode="contain" />
-                        <ComponentTitle3 title='Boleto'/>
-                    </View>
+                    <Pressable onPress={navBoleto} accessible={true} accessibilityLabel="Navegar para Boleto">
+                        <View style={styles.boximage}>
+                            <Image source={Boleto} style={styles.image} resizeMode="contain" />
+                            <ComponentTitle3 title='Boleto' />
+                        </View>
+                    </Pressable>
                 </View>
+
                 <View style={styles.cardImage}>
                     <View style={styles.boximage}>
                         <Image source={Cartao} style={styles.image} resizeMode="contain" />
-                        <ComponentTitle3 title='Cartão'/>
+                        <ComponentTitle3 title='Cartão' />
                     </View>
                 </View>
                 <View style={styles.cardImage}>
                     <View style={styles.boximage}>
                         <Image source={Qrcode} style={styles.image} resizeMode="contain" />
-                        <ComponentTitle3 title='QR Code'/>
+                        <ComponentTitle3 title='QR Code' />
                     </View>
                 </View>
                 <View style={styles.cardImage}>
                     <View style={styles.boximage}>
                         <Image source={Pix} style={styles.image} resizeMode="contain" />
-                        <ComponentTitle3 title='Pix'/>
+                        <ComponentTitle3 title='Pix' />
                     </View>
                 </View>
             </View>
