@@ -14,9 +14,9 @@ const Pix = require('../../../../assets/images/pix.png');
 
 
 const navBoleto = () => router.push("home/boleto");
-const navCard = () => router.push("cardRegister");
-const navQrcode = () => router.push("qrcode");
-const navPix = () => router.push("pix")
+const navCard = () => router.push("home/cardRegister");
+const navQrcode = () => router.push("home/qrcode");
+const navPix = () => router.push("home/pix")
 
 export default function () {
     return (
@@ -45,20 +45,26 @@ export default function () {
 
                 <View style={styles.cardImage}>
                     <View style={styles.boximage}>
-                        <Image source={Cartao} style={styles.image} resizeMode="contain" />
-                        <ComponentTitle3 title='Cartão' />
+                        <Pressable onPress={navCard} accessible={true} accessibilityLabel="Navegar para O Cartão">
+                            <Image source={Cartao} style={styles.image} resizeMode="contain" />
+                            <ComponentTitle3 title='Cartão' />
+                        </Pressable>
                     </View>
                 </View>
                 <View style={styles.cardImage}>
                     <View style={styles.boximage}>
-                        <Image source={Qrcode} style={styles.image} resizeMode="contain" />
-                        <ComponentTitle3 title='QR Code' />
+                        <Pressable onPress={navQrcode} accessible={true} accessibilityLabel="Navegar para Qrcode">
+                            <Image source={Qrcode} style={styles.image} resizeMode="contain" />
+                            <ComponentTitle3 title='QR Code' />
+                        </Pressable>
                     </View>
                 </View>
                 <View style={styles.cardImage}>
                     <View style={styles.boximage}>
-                        <Image source={Pix} style={styles.image} resizeMode="contain" />
-                        <ComponentTitle3 title='Pix' />
+                        <Pressable onPress={navPix} accessible={true} accessibilityLabel="Navegar para Pix">
+                            <Image source={Pix} style={styles.image} resizeMode="contain" />
+                            <ComponentTitle3 title='Pix' />
+                        </Pressable>
                     </View>
                 </View>
             </View>
