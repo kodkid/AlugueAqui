@@ -25,7 +25,7 @@ const ComponentCardBoxShop: React.FC = () => (
         <Card.Cover source={ComponentIcon} style={styles.cover} />
       </View>
       <View style={styles.rightContent}>
-        <Link style={styles.title} href={"home/pay"}> Nome do item</Link>
+        <Link style={styles.title} href={"home/shopItemLayout"}> Nome do item</Link>
         <Text style={styles.price} variant="bodyMedium">R$ 0,00</Text>
         <Text style={styles.time} variant='bodySmall'>por dia</Text>
         <Card.Actions style={styles.actions}>
