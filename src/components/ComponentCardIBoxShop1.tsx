@@ -1,12 +1,10 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { Link } from 'expo-router';
-import { Avatar, Card, Text, Icon, MD3Colors } from 'react-native-paper';
-import { AirbnbRating } from 'react-native-ratings';
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { Link } from "expo-router";
+import { Avatar, Card, Text, Icon, MD3Colors } from "react-native-paper";
+import { AirbnbRating } from "react-native-ratings";
 
 //    <Text style={styles.title} variant="displaySmall">Nome do item</Text>
-
-
 
 const ComponentIcon = require("../../assets/icon.png");
 
@@ -16,32 +14,38 @@ interface LeftContentProps {
   style?: object;
 }
 
-const LeftContent: React.FC<LeftContentProps> = (props) => <Avatar.Icon {...props} icon="folder" />;
+const LeftContent: React.FC<LeftContentProps> = (props) => (
+  <Avatar.Icon {...props} icon="folder" />
+);
 
 const ComponentCardBoxShop: React.FC = () => (
-  <Card mode='contained' style={styles.container}>
+  <Card mode="contained" style={styles.container}>
     <View style={styles.cardContent}>
       <View style={styles.leftContent}>
         <Card.Cover source={ComponentIcon} style={styles.cover} />
       </View>
       <View style={styles.rightContent}>
-        <Link style={styles.title} href={"home/shopItemLayout"}> Nome do item</Link>
-        <Text style={styles.price} variant="bodyMedium">R$ 0,00</Text>
-        <Text style={styles.time} variant='bodySmall'>por dia</Text>
+        <Link style={styles.title} href={"home/shopItemLayout"}>
+          {" "}
+          Nome do item
+        </Link>
+        <Text style={styles.price} variant="bodyMedium">
+          R$ 0,00
+        </Text>
+        <Text style={styles.time} variant="bodySmall">
+          por dia
+        </Text>
         <Card.Actions style={styles.actions}>
           <View style={styles.rating}>
-          <AirbnbRating
-            size={15}
-            defaultRating={1}
-            showRating={false}
-            selectedColor='#FFB800' />
+            <AirbnbRating
+              size={15}
+              defaultRating={1}
+              showRating={false}
+              selectedColor="#FFB800"
+            />
           </View>
           <View style={styles.icon}>
-            <Icon
-              source="heart"
-              color={MD3Colors.error50}
-              size={30}
-            />
+            <Icon source="heart" color={MD3Colors.error50} size={30} />
           </View>
         </Card.Actions>
       </View>
@@ -51,10 +55,10 @@ const ComponentCardBoxShop: React.FC = () => (
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FBF7EC',
+    backgroundColor: "#FBF7EC",
   },
   cardContent: {
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingHorizontal: 16,
     paddingVertical: 12,
   },
@@ -64,7 +68,7 @@ const styles = StyleSheet.create({
   cover: {
     width: 80,
     height: 80,
-    resizeMode: 'cover',
+    resizeMode: "cover",
   },
   rightContent: {
     flex: 1,
@@ -72,11 +76,11 @@ const styles = StyleSheet.create({
   divider: {
     marginVertical: 8,
     height: 1,
-    backgroundColor: 'black',
+    backgroundColor: "black",
   },
   title: {
     fontSize: 24,
-    fontWeight: "bold"
+    fontWeight: "bold",
   },
   price: {
     fontSize: 16,
@@ -89,8 +93,7 @@ const styles = StyleSheet.create({
   actions: {
     gap: 90,
     margin: 4,
-    marginBottom: 4
-
+    marginBottom: 4,
   },
   rating: {
     justifyContent: "center",
@@ -99,7 +102,7 @@ const styles = StyleSheet.create({
   icon: {
     justifyContent: "flex-end",
     alignItems: "flex-end",
-  }
+  },
 });
 
 export default ComponentCardBoxShop;

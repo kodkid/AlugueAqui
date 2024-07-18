@@ -99,11 +99,11 @@ const styles = StyleSheet.create({
   },
   button: {
     marginTop: 8,
-    width: "90%", 
+    width: "90%",
   },
   buttom2: {
     marginTop: 8,
-    width: "90%", 
-    borderColor: "#FFB800"
-  }
+    width: "90%",
+    borderColor: "#FFB800",
+  },
 });

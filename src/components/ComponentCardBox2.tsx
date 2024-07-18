@@ -1,6 +1,13 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { Avatar, Card, Text, IconButton, MD3Colors, Button } from "react-native-paper";
+import {
+  Avatar,
+  Card,
+  Text,
+  IconButton,
+  MD3Colors,
+  Button,
+} from "react-native-paper";
 import { AirbnbRating } from "react-native-ratings";
 
 interface LeftContentProps {
@@ -18,12 +25,12 @@ const ComponentCardBoxShop2: React.FC = () => (
       <Text variant="titleLarge">Nome do item</Text>
       <Text variant="bodyMedium">Construção</Text>
       <View style={styles.rating}>
-      <AirbnbRating
-        size={15}
-        defaultRating={1}
-        showRating={false}
-        selectedColor="#FFB800"
-      />
+        <AirbnbRating
+          size={15}
+          defaultRating={1}
+          showRating={false}
+          selectedColor="#FFB800"
+        />
       </View>
       <IconButton
         icon="heart"
@@ -36,8 +43,7 @@ const ComponentCardBoxShop2: React.FC = () => (
       </Text>
       <Text variant="bodySmall">10x de R$ 250</Text>
       <Text variant="bodySmall">sem juros</Text>
-      <View style={styles.buttonsContainer}>
-      </View>
+      <View style={styles.buttonsContainer}></View>
     </View>
   </Card>
 );
@@ -53,7 +59,6 @@ const styles = StyleSheet.create({
   rating: {
     justifyContent: "flex-start",
     alignItems: "flex-start",
-
   },
   buttonsContainer: {
     marginTop: 16,
