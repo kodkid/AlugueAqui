@@ -4,7 +4,7 @@ import { AntDesign } from '@expo/vector-icons';
 
 const ShopItem1 = require("../../assets/icon.png");
 
-const ComponentCardShop: React.FC = () => {
+const ComponentCardShop1: React.FC = () => {
 
   return (
     <View style={styles.containerImage}>
@@ -53,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ComponentCardShop;
+export default ComponentCardShop1;
