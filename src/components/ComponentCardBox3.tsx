@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
-import PseudoText from "../components/PseudoText";
+import PseudoText from "./PseudoText1";
 
 const ComponentCardBox3: React.FC = () => {
   return (
