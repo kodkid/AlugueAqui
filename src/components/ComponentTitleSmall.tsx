@@ -15,7 +15,7 @@ const ComponentTitle3: React.FC<TextProps> = ({ title }) => {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 24,
+    fontSize: 20,
     marginTop: 14,
     color: "#FFB800",
   },

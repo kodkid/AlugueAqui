@@ -1,8 +1,7 @@
 import React from "react";
 import { View, Image, StyleSheet, Pressable } from "react-native";
 import { router } from "expo-router";
-import { Drawer } from "expo-router/drawer";
-import { DrawerToggleButton } from "@react-navigation/drawer";
+
 
 import ComponentTitle1 from "../../../components/ComponentTitle4";
 import ComponentTitle3 from "../../../components/ComponentTitle3";
@@ -20,12 +19,6 @@ const navPix = () => router.push("home/pix");
 export default function () {
   return (
     <View style={styles.container}>
-      <Drawer.Screen
-        options={{
-          headerShown: false,
-          headerLeft: () => <DrawerToggleButton />,
-        }}
-      />
       <View style={styles.containerText}>
         <ComponentTitle1 title="Selecione o método de " />
         <ComponentTitle1 title="pagamento" />

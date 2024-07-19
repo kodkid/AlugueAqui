@@ -11,15 +11,15 @@ export default function Layout() {
       />
       <Stack.Screen
         name="pay"
-        options={{ title: "Tela de pagamento", headerShown: false }}
+        options={{ title: "Tela de pagamento", headerShown: true }}
       />
       <Stack.Screen
         name="boleto"
-        options={{ title: "Pagar boleto", headerShown: false }}
+        options={{ title: "Pagar boleto", headerShown: true }}
       />
       <Stack.Screen
         name="cardRegister"
-        options={{ title: "Cadastrar cartão", headerShown: false }}
+        options={{ title: "Cadastrar cartão", headerShown: true }}
       />
       <Stack.Screen
         name="layoutProduto"

@@ -2,30 +2,31 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { router, Link } from "expo-router";
 import { Button } from "react-native-paper";
-import ComponentTitle from "../../../components/ComponentTitle";
+import ComponentTitleSmall from "../../../components/ComponentTitleSmall";
 import ComponentTextInput from "../../../components/ComponentTextInput";
 
 export default function CardRegister({}) {
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>Cadastrar Cartão</Text>
       <View style={styles.registerPanel}>
-        <ComponentTitle title="Número Do Cartão" />
+        <ComponentTitleSmall title="Número Do Cartão" />
         <ComponentTextInput placeholder="Número do Cartão" />
 
         <View style={styles.inlineContainer}>
           <View style={styles.inlineInput}>
-            <ComponentTitle title="Validade" />
+            <ComponentTitleSmall title="Validade" />
             <ComponentTextInput style={styles.smallInput} placeholder="MM/AA" />
           </View>
           <View style={styles.inlineInput}>
-            <ComponentTitle title="CVC" />
+            <ComponentTitleSmall title="CVC" />
             <ComponentTextInput style={styles.smallInput} placeholder="CVC" />
           </View>
         </View>
 
-        <ComponentTitle title="Titular do cartão" />
+        <ComponentTitleSmall title="Titular do cartão" />
         <ComponentTextInput placeholder="Titular do cartão" />
-        <ComponentTitle title="CPF do titular" />
+        <ComponentTitleSmall title="CPF do titular" />
         <ComponentTextInput placeholder="CPF do titular" />
 
         <Button
@@ -40,11 +41,6 @@ export default function CardRegister({}) {
         </Button>
 
         <View style={styles.textPanel}>
-          <Text>
-            <Link href="/home" style={styles.link}>
-              Voltar
-            </Link>
-          </Text>
         </View>
       </View>
     </View>
@@ -58,8 +54,16 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: 16,
   },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    position: 'absolute',
+    top: 10, // Ajuste a posição conforme necessário
+    left: 16,
+    marginTop: 60
+  },
   registerPanel: {
-    marginTop: 16,
+    marginTop: 40, // Ajuste conforme necessário para posicionar abaixo do título
   },
   inlineContainer: {
     flexDirection: "row",
@@ -81,6 +85,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
   },
   link: {
-    color: "##FFB800",
+    color: "#FFB800",
   },
 });
+
