@@ -30,6 +30,9 @@ export default function ShopItemLayout() {
         <ComponentCardBox2 />
       </View>
       {/* Fim do componentCardBox2 */}
+      <View style={styles.end}>
+      <ComponentCardBox3/>
+      </View>
      
     </View>
   );
@@ -39,7 +42,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    gap: 8,
+    gap: 4,
   },
 
   navigationRight: {
@@ -48,11 +51,14 @@ const styles = StyleSheet.create({
     top: 16,
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 1, 
-    marginTop: 64,
+   
   },
   componentCardBox2: {
-    height: "30%",
+    backgroundColor:"#999"
+    
   },
+  end: {
+    backgroundColor: "#999",
+  }
 
 });
