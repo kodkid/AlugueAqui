@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Alert } from "react-native";
 import {
   Avatar,
   Card,
@@ -22,8 +22,16 @@ const LeftContent: React.FC<LeftContentProps> = (props) => (
 const ComponentCardBoxShop2: React.FC = () => (
   <Card mode="contained" style={styles.container}>
     <View style={styles.cardContent}>
-      <Text variant="titleLarge">Nome do item</Text>
-      <Text variant="bodyMedium">Construção</Text>
+      <View style={styles.header}>
+        <Text style={styles.title} variant="titleLarge">Nome do item</Text>
+        <IconButton
+          icon="heart"
+          iconColor={MD3Colors.error50}
+          size={30}
+          onPress={() => console.log("Pressed")}
+        />
+      </View>
+      <Text style={styles.construction} variant="bodyMedium">Construção</Text>
       <View style={styles.rating}>
         <AirbnbRating
           size={15}
@@ -32,18 +40,31 @@ const ComponentCardBoxShop2: React.FC = () => (
           selectedColor="#FFB800"
         />
       </View>
-      <IconButton
-        icon="heart"
-        iconColor={MD3Colors.error50}
-        size={40}
-        onPress={() => console.log("Pressed")}
-      />
-      <Text variant="bodyMedium">
-        $0,00 <Text variant="bodySmall">à vista</Text>
+      <Text style={styles.price} variant="bodyMedium">
+        $450,00 <Text variant="bodySmall">à vista</Text>
       </Text>
       <Text variant="bodySmall">10x de R$ 250</Text>
       <Text variant="bodySmall">sem juros</Text>
-      <View style={styles.buttonsContainer}></View>
+      <View style={styles.buttonsContainer}>
+        <Button
+          style={styles.buttom1}
+          mode="elevated"
+          buttonColor="#FFB800"
+          textColor="#000"
+          onPress={() => Alert.alert("Botão1 pressionado")}
+        >
+          Alugar
+        </Button>
+        <Button
+          style={styles.buttom2}
+          mode="outlined"
+          buttonColor="#fff"
+          textColor="#FFB800"
+          onPress={() => Alert.alert("Botão2 pressionado")}
+        >
+          Adicionar a sacola
+        </Button>
+      </View>
     </View>
   </Card>
 );
@@ -56,18 +77,41 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     paddingVertical: 12,
   },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between", // Alinha os itens nas extremidades
+    alignItems: "center", // Alinha verticalmente
+    marginBottom: 4, // Ajustado para diminuir o espaçamento
+    height: 25,
+  },
+  title: {
+    fontWeight: "bold",
+  },
+  construction: {
+    marginBottom: 4, // Ajustado para reduzir o espaçamento abaixo do título
+  },
+  price: {
+    fontSize: 14,
+    fontWeight: "bold",
+  },
   rating: {
     justifyContent: "flex-start",
     alignItems: "flex-start",
+    marginBottom: 4, // Reduzido para diminuir o espaço abaixo da avaliação
   },
   buttonsContainer: {
-    marginTop: 16,
+    marginTop: 32,
     alignItems: "center",
     width: "100%", // Faz os botões ocuparem a largura total do contêiner
   },
-  button: {
+  buttom1: {
     marginTop: 8,
-    width: "80%", // Ajuste a largura conforme necessário
+    width: "90%",
+  },
+  buttom2: {
+    marginTop: 8,
+    width: "90%",
+    borderColor: "#FFB800",
   },
 });
 

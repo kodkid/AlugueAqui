@@ -4,7 +4,7 @@ import { router, } from "expo-router";
 import { Drawer } from "expo-router/drawer";
 import { DrawerToggleButton, } from "@react-navigation/drawer"
 
-import ComponentCardBoxShop from "../../../components/ComponentCardIBoxShop1";
+import ComponentCardBoxShop from "../../../components/ComponentCardIBox1";
 import ComponentTitle from "../../../components/ComponentTitle";
 import ComponentText from "../../../components/ComponentText";
 

@@ -34,24 +34,6 @@ export default function ShopItemLayout() {
       </View>
       {/* Fim do componentCardBox2 */}
       <View style={styles.containerButtom}>
-        <Button
-          style={styles.button}
-          mode="elevated"
-          buttonColor="#FFB800"
-          textColor="#fff"
-          onPress={() => console.log("Alugar")}
-        >
-          Alugar
-        </Button>
-        <Button
-          style={styles.buttom2}
-          mode="outlined"
-          buttonColor="#fff"
-          textColor="#FFB800"
-          onPress={() => console.log("Adicionar a sacola")}
-        >
-          Adicionar a sacola
-        </Button>
       </View>
     </View>
   );
@@ -61,15 +43,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
+    gap: 8,
   },
   containerImage: {
-    marginTop: 16, // Espaço acima da imagem
+    marginTop: 16, 
     alignItems: "center",
   },
   shopItem: {
     height: 200,
     width: 200,
-    resizeMode: "contain", // Ajuste o modo de redimensionamento conforme necessário
+    resizeMode: "contain",
   },
   navigationLeft: {
     position: "absolute",
@@ -77,7 +60,7 @@ const styles = StyleSheet.create({
     top: 16,
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 1, // Para garantir que fique sobre a imagem
+    zIndex: 1, 
     marginTop: 64,
   },
   navigationRight: {
@@ -86,18 +69,17 @@ const styles = StyleSheet.create({
     top: 16,
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 1, // Para garantir que fique sobre a imagem
+    zIndex: 1, 
     marginTop: 64,
   },
   componentCardBox2: {
-    backgroundColor: "#999",
     height: "30%",
   },
   containerButtom: {
     justifyContent: "center",
     alignItems: "center",
   },
-  button: {
+  buttom1: {
     marginTop: 8,
     width: "90%",
   },

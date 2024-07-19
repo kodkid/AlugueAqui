@@ -11,5 +11,5 @@
   "include": [
     "**/*.ts",
     "**/*.tsx"
-, "src/components/ComponentCardIBoxShop1.tsx"  ]
+, "src/components/ComponentCardIBox1.tsx"  ]
 }
