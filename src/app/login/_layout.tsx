@@ -1,18 +1,25 @@
-import React from 'react';
+import React from "react";
 import { Stack, Slot } from "expo-router";
-import { SQLiteProvider, } from "expo-sqlite";
-import { startDb } from '../database/startDb';
+import { SQLiteProvider } from "expo-sqlite";
+import { startDb } from "../database/startDb";
 
 export default function Layout() {
-    return (
-        <SQLiteProvider databaseName='alugueaqui.db' onInit={startDb}>
-            <Stack>
-                <Stack.Screen name="index" options={{ title: "bem vIndo", headerShown: true }} />
-                <Stack.Screen name="recovery" options={{ title: "Tela de recuperação", headerShown: true }} />
-                <Stack.Screen name="register" options={{ title: "Tela de registro", headerShown: true }} />
-            </Stack>
-        </SQLiteProvider>
-
-
-    );
+  return (
+    <SQLiteProvider databaseName="alugueaqui.db" onInit={startDb}>
+      <Stack>
+        <Stack.Screen
+          name="index"
+          options={{ title: "bem vIndo", headerShown: true }}
+        />
+        <Stack.Screen
+          name="recovery"
+          options={{ title: "Tela de recuperação", headerShown: true }}
+        />
+        <Stack.Screen
+          name="register"
+          options={{ title: "Tela de registro", headerShown: true }}
+        />
+      </Stack>
+    </SQLiteProvider>
+  );
 }

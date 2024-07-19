@@ -7,7 +7,6 @@ import ComponentTitle from "../../components/ComponentTitle";
 import ComponentTextInput from "../../components/ComponentTextInput";
 
 export default function Recovery() {
-
   return (
     <View style={styles.container}>
       <ComponentTitle title="Recuperar conta" />

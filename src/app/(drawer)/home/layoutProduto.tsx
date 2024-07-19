@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  View,
-  StyleSheet,
-  Dimensions,
-} from "react-native";
+import { View, StyleSheet, Dimensions } from "react-native";
 
 import ComponentCardShop from "../../../components/ComponentCardShop1";
 import ComponentCardBox2 from "../../../components/ComponentCardBox2";
@@ -16,18 +12,16 @@ const windowWidth = Dimensions.get("window").width;
 export default function ShopItemLayout() {
   return (
     <View style={styles.container}>
-  
       <View style={styles.header}>
-      <ComponentCardShop />
+        <ComponentCardShop />
       </View>
       <View style={styles.componentCardBox2}>
         <ComponentCardBox2 />
       </View>
       {/* Fim do componentCardBox2 */}
       <View style={styles.end}>
-      <ComponentCardBox3/>
+        <ComponentCardBox3 />
       </View>
-     
     </View>
   );
 }
@@ -38,10 +32,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     gap: 4,
   },
-    header: {
-    
-      
-    },
+  header: {},
 
   navigationRight: {
     position: "absolute",
@@ -49,13 +40,7 @@ const styles = StyleSheet.create({
     top: 16,
     justifyContent: "center",
     alignItems: "center",
-   
   },
-  componentCardBox2: {
-
-    
-  },
-  end: {
-  }
-
+  componentCardBox2: {},
+  end: {},
 });

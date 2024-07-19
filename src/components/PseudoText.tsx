@@ -27,13 +27,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginHorizontal: 8,
-
   },
   paragraph: {
     fontStyle: "italic",
-    color: "#665E66"
-
-  }
+    color: "#665E66",
+  },
 });
 
 export default PseudoText;

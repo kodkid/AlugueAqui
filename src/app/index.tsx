@@ -15,7 +15,7 @@ const NavigateLogin = () => {
   router.push("login");
 };
 
-export default function Index({ }) {
+export default function Index({}) {
   return (
     <ImageBackground source={Bg} style={styles.container}>
       <View style={styles.container}>
@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-
   },
   containerIndex: {
     justifyContent: "center",
@@ -53,8 +52,7 @@ const styles = StyleSheet.create({
     marginTop: 32,
     borderWidth: 2,
     borderRadius: 16,
-    borderColor: "#999"
-
+    borderColor: "#999",
   },
   potImage: {
     flex: 1 / 3,

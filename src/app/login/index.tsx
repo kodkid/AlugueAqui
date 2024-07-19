@@ -1,24 +1,20 @@
-import React from 'react';
-import { StyleSheet, View, Image, Text, StatusBar, } from "react-native";
+import React from "react";
+import { StyleSheet, View, Image, Text, StatusBar } from "react-native";
 import { Button } from "react-native-paper";
 import { router } from "expo-router";
 
 import ComponentTextInput from "../../components/ComponentTextInput";
 import ComponentText from "../../components/ComponentText";
-import ComponentTextInputPassword from '../../components/ComponentTextInputPassword';
+import ComponentTextInputPassword from "../../components/ComponentTextInputPassword";
 
-const Logo = require("../../../assets/images/alugue-aqui-logo-2.png")
+const Logo = require("../../../assets/images/alugue-aqui-logo-2.png");
 
-const RedirecionamentoHome = () => (
-  router.push("/(drawer)/home")
-);
-export default function Login({ }) {
+const RedirecionamentoHome = () => router.push("/(drawer)/home");
+export default function Login({}) {
   return (
-
     <View style={styles.container}>
       <StatusBar backgroundColor="#FFB800" barStyle={"light-content"} />
       <View style={styles.loginPanel}>
-
         <View style={styles.containerImage}>
           <Image source={Logo} style={styles.logo}></Image>
         </View>
@@ -27,7 +23,7 @@ export default function Login({ }) {
           <ComponentText title="Digite seu email" />
           <ComponentTextInput placeholder="Login" />
           <ComponentText title="Digite sua senha" />
-          <ComponentTextInputPassword placeholder='Digite sua senha' />
+          <ComponentTextInputPassword placeholder="Digite sua senha" />
 
           <Text
             style={styles.link1}

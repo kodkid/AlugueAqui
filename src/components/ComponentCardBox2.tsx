@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Alert } from "react-native";
-import {router} from "expo-router"
+import { router } from "expo-router";
 import {
   Avatar,
   Card,
@@ -24,7 +24,9 @@ const ComponentCardBoxShop2: React.FC = () => (
   <Card mode="contained" style={styles.container}>
     <View style={styles.cardContent}>
       <View style={styles.header}>
-        <Text style={styles.title} variant="titleLarge">Nome do item</Text>
+        <Text style={styles.title} variant="titleLarge">
+          Nome do item
+        </Text>
         <IconButton
           icon="heart"
           iconColor={MD3Colors.error50}
@@ -32,7 +34,9 @@ const ComponentCardBoxShop2: React.FC = () => (
           onPress={() => console.log("Pressed")}
         />
       </View>
-      <Text style={styles.construction} variant="bodyMedium">Construção</Text>
+      <Text style={styles.construction} variant="bodyMedium">
+        Construção
+      </Text>
       <View style={styles.rating}>
         <AirbnbRating
           size={15}
@@ -52,7 +56,7 @@ const ComponentCardBoxShop2: React.FC = () => (
           mode="elevated"
           buttonColor="#FFB800"
           textColor="#000"
-          onPress={() =>router.push("home/pay") }
+          onPress={() => router.push("home/pay")}
         >
           Alugar
         </Button>
