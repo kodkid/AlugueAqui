@@ -4,9 +4,6 @@ import {
   StyleSheet,
   Dimensions,
 } from "react-native";
-import { Drawer } from "expo-router/drawer";
-import { DrawerToggleButton } from "@react-navigation/drawer";
-
 
 import ComponentCardShop from "../../../components/ComponentCardShop1";
 import ComponentCardBox2 from "../../../components/ComponentCardBox2";
@@ -19,13 +16,10 @@ const windowWidth = Dimensions.get("window").width;
 export default function ShopItemLayout() {
   return (
     <View style={styles.container}>
-      <Drawer.Screen
-        options={{
-          headerShown: true,
-          headerLeft: () => <DrawerToggleButton />,
-        }}
-      />
+  
+      <View style={styles.header}>
       <ComponentCardShop />
+      </View>
       <View style={styles.componentCardBox2}>
         <ComponentCardBox2 />
       </View>
@@ -44,6 +38,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     gap: 4,
   },
+    header: {
+    
+      
+    },
 
   navigationRight: {
     position: "absolute",
@@ -54,11 +52,10 @@ const styles = StyleSheet.create({
    
   },
   componentCardBox2: {
-    backgroundColor:"#999"
+
     
   },
   end: {
-    backgroundColor: "#999",
   }
 
 });

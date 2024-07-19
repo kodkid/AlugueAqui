@@ -23,7 +23,7 @@ export default function () {
         <View style={styles.container}>
             <Drawer.Screen
                 options={{
-                    headerShown: true,
+                    headerShown: false,
                     headerLeft: () => <DrawerToggleButton />,
                 }}
             />

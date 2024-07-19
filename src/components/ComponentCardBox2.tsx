@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Alert } from "react-native";
+import {router} from "expo-router"
 import {
   Avatar,
   Card,
@@ -51,7 +52,7 @@ const ComponentCardBoxShop2: React.FC = () => (
           mode="elevated"
           buttonColor="#FFB800"
           textColor="#000"
-          onPress={() => Alert.alert("Botão1 pressionado")}
+          onPress={() =>router.push("home/pay") }
         >
           Alugar
         </Button>
@@ -60,7 +61,7 @@ const ComponentCardBoxShop2: React.FC = () => (
           mode="outlined"
           buttonColor="#fff"
           textColor="#FFB800"
-          onPress={() => Alert.alert("Botão2 pressionado")}
+          onPress={() => router.push("(drawer)")}
         >
           Adicionar a sacola
         </Button>
