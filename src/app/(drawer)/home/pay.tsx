@@ -2,7 +2,6 @@ import React from "react";
 import { View, Image, StyleSheet, Pressable } from "react-native";
 import { router } from "expo-router";
 
-
 import ComponentTitle1 from "../../../components/ComponentTitle4";
 import ComponentTitle3 from "../../../components/ComponentTitle3";
 

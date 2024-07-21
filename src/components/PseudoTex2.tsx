@@ -6,10 +6,7 @@ const PseudoText2: React.FC = () => {
     <View style={styles.container}>
       <Text style={styles.paragraph}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        porta efficitur sem nec interdum. Suspendisse potenti. Sed maximus
-       
-     
-      {" "}
+        porta efficitur sem nec interdum. Suspendisse potenti. Sed maximus{" "}
       </Text>
     </View>
   );

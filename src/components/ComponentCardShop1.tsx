@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Image,
-  View,
-  StyleSheet,
-  TouchableOpacity,
-
-} from "react-native";
+import { Image, View, StyleSheet, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 const ShopItem1 = require("../../assets/icon.png");
