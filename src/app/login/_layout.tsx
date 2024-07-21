@@ -9,7 +9,7 @@ export default function Layout() {
       <Stack>
         <Stack.Screen
           name="index"
-          options={{ title: "bem vIndo", headerShown: true }}
+          options={{ title: "bem vindo", headerShown: true }}
         />
         <Stack.Screen
           name="recovery"

@@ -38,9 +38,6 @@ export default function Recovery() {
       >
         Login
       </Button>
-      <Text style={styles.link} onPress={() => router.push("/login")}>
-        Voltar
-      </Text>
     </View>
   );
 }
@@ -52,14 +49,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     justifyContent: "center",
 
-    gap: 2,
+    gap: 6,
   },
   buttom: {
-    marginTop: 16,
+    marginTop: 8,
   },
-  link: {
-    color: "#000",
-    alignSelf: "flex-start",
-    marginTop: 10,
-  },
+
 });

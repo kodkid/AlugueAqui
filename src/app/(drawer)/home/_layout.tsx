@@ -15,11 +15,19 @@ export default function Layout() {
       />
       <Stack.Screen
         name="boleto"
-        options={{ title: "Pagar boleto", headerShown: true }}
+        options={{ title: "Boleto", headerShown: true }}
       />
       <Stack.Screen
         name="cardRegister"
         options={{ title: "Cadastrar cartão", headerShown: true }}
+      />
+       <Stack.Screen
+        name="qrcode"
+        options={{ title: "QR Code", headerShown: true }}
+      />
+       <Stack.Screen
+        name="pix"
+        options={{ title: "Pix", headerShown: true }}
       />
       <Stack.Screen
         name="layoutProduto"

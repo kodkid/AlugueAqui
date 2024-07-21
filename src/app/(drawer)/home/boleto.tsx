@@ -1,24 +1,27 @@
 import React from "react";
 import { StyleSheet, Text, View, Alert } from "react-native";
-import { router } from "expo-router";
 import { Button } from "react-native-paper";
 
 import PseudoText2 from "../../../components/PseudoTex2";
-import ComponentTitle3 from "../../../components/ComponentTitle3";
+import ComponentTitle5 from "../../../components/ComponentTitle5";
+
+
 
 export default function Boleto() {
   return (
     <View style={styles.container}>
       <View style={styles.part}>
-        <View style={styles.potPix}>
-          <Text style={styles.pix}>Pix</Text>
+        <View style={styles.potTitle}>
+          <Text style={styles.title}>Boleto bancário</Text>
         </View>
         <PseudoText2 />
       </View>
       <View style={styles.part}>
         <View style={styles.containCenter}>
-          <ComponentTitle3 title="40.028.922/0001-42"></ComponentTitle3>
-          <Text style={styles.typePix}> Tipo CNPJ</Text>
+          <ComponentTitle5 title="40021.89001" />
+          <ComponentTitle5 title="20043.982247" />
+          <ComponentTitle5 title="91020.150008 8 " />
+          <ComponentTitle5 title="87980026000" />
         </View>
       </View>
       <View style={styles.part}>
@@ -57,10 +60,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
   },
-  potPix: {
+  potTitle: {
     marginHorizontal: 16,
   },
-  pix: {
+  title: {
     fontSize: 18,
     fontWeight: "bold",
   },
