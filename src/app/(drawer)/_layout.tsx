@@ -28,8 +28,8 @@ export default function TabLayout() {
       <Drawer.Screen
         name="index"
         options={{
-          drawerLabel: "Carrinho de compra",
-          title: "Carrinho de compras",
+          drawerLabel: "Sacola",
+          title: "Sacola",
           drawerIcon: ({ size, color }) => (
             <MaterialIcons name="shopping-cart" size={size} color={color} />
           ),

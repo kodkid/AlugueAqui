@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { Drawer } from "expo-router/drawer";
 import { DrawerToggleButton } from "@react-navigation/drawer";
 
-import ComponentSeachBar from "../../components/ComponentTextInputGlass";
+import ComponentCarrinhoCard from "../../components/ComponentCarrinhoCard";
 
 export default function Carrinho() {
   return (
@@ -12,10 +12,21 @@ export default function Carrinho() {
         options={{
           headerShown: true,
           headerLeft: () => <DrawerToggleButton />,
-          headerRight: () => <ComponentSeachBar placeholder="Ola" />,
         }}
       />
-      <Text> Tela de carrinho</Text>
+      <View style={styles.cardsContainer}>
+        <ScrollView contentContainerStyle={styles.cardsScroll}>
+          <ComponentCarrinhoCard />
+          <ComponentCarrinhoCard />
+          <ComponentCarrinhoCard />
+          <ComponentCarrinhoCard />
+          <ComponentCarrinhoCard />
+          {/* Adicione mais cards se necessário */}
+        </ScrollView>
+      </View>
+      <View style={styles.part}>
+        <Text>Texto</Text>
+      </View>
     </View>
   );
 }
@@ -23,7 +34,18 @@ export default function Carrinho() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
     backgroundColor: "#fff",
+  },
+  cardsContainer: {
+    flex: 1,
+    maxHeight: 500, // Ajuste esse valor para definir a altura máxima dos cartões
+    paddingBottom: 16, // Espaçamento inferior para o ScrollView
+  },
+  cardsScroll: {
+    flexGrow: 0, // Impede que o ScrollView expanda além do necessário
+
+  },
+  part: {
+    padding: 16,
   },
 });

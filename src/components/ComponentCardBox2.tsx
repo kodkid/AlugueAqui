@@ -84,16 +84,16 @@ const styles = StyleSheet.create({
   },
   header: {
     flexDirection: "row",
-    justifyContent: "space-between", // Alinha os itens nas extremidades
-    alignItems: "center", // Alinha verticalmente
-    marginBottom: 4, // Ajustado para diminuir o espaçamento
+    justifyContent: "space-between", 
+    alignItems: "center", 
+    marginBottom: 4, 
     height: 25,
   },
   title: {
     fontWeight: "bold",
   },
   construction: {
-    marginBottom: 4, // Ajustado para reduzir o espaçamento abaixo do título
+    marginBottom: 4,
   },
   price: {
     fontSize: 14,
@@ -102,12 +102,12 @@ const styles = StyleSheet.create({
   rating: {
     justifyContent: "flex-start",
     alignItems: "flex-start",
-    marginBottom: 4, // Reduzido para diminuir o espaço abaixo da avaliação
+    marginBottom: 4, 
   },
   buttonsContainer: {
     marginTop: 32,
     alignItems: "center",
-    width: "100%", // Faz os botões ocuparem a largura total do contêiner
+    width: "100%", 
   },
   buttom1: {
     marginTop: 8,
