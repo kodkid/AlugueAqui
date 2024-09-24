@@ -3,6 +3,8 @@ import { View, Text, StyleSheet, ScrollView } from "react-native";
 import { Drawer } from "expo-router/drawer";
 import { DrawerToggleButton } from "@react-navigation/drawer";
 
+import ComponentTitle5 from "../../components/ComponentTitle6";
+import ComponentTextInput from "../../components/ComponentTextInput";
 import ComponentCarrinhoCard from "../../components/ComponentCarrinhoCard";
 
 export default function Carrinho() {
@@ -21,11 +23,12 @@ export default function Carrinho() {
           <ComponentCarrinhoCard />
           <ComponentCarrinhoCard />
           <ComponentCarrinhoCard />
-          {/* Adicione mais cards se necessário */}
         </ScrollView>
       </View>
       <View style={styles.part}>
-        <Text>Texto</Text>
+        <ComponentTitle5 title="Calcular frete" />
+        <ComponentTextInput placeholder="Digite o seu CEP"/>
+        
       </View>
     </View>
   );

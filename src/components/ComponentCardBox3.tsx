@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     borderEndWidth: 4,
     borderEndColor: "#FFB800",
-    borderBottomWidth: 2, // Define a largura da borda inferior
-    borderBottomColor: "#FFB800", // Define a cor da borda inferior
+    borderBottomWidth: 2, 
+    borderBottomColor: "#FFB800", 
   },
 });
 
