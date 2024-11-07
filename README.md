@@ -1,4 +1,4 @@
-# **AlugueAqui** Transformando a Forma como Você Aloca Máquinas
+# **AlugueAqui** Transformando a Forma como Você Aluga Máquinas
 
 Imagine uma solução onde encontrar e alugar máquinas para aquela tarefa especial se torna simples como um clique. **AlugueAqui** surge da necessidade de eliminar as barreiras que impedem você de acessar máquinas quando precisar delas, sem o peso de comprá-las para um único uso.
 
