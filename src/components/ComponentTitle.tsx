@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     marginTop: 14,
     color: "#313131",
     fontWeight: "bold",
+    fontFamily: "sans-serif"
   },
 });
 

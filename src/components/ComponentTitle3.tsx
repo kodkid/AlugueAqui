@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginTop: 14,
     color: "#FFB800",
+    fontFamily: "sans-serif"
   },
 });
 

@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
   containerImage: {
     marginTop: 16,
     alignItems: "center",
+    fontFamily: "sans-serif"
   },
   shopItem: {
     height: 200,

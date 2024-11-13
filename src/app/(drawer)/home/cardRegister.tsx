@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     justifyContent: "center",
     paddingHorizontal: 16,
+    fontFamily: "sans-serif",
   },
   title: {
     fontSize: 24,

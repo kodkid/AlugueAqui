@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Alert } from "react-native";
+import { StyleSheet, View,} from "react-native";
 import { router } from "expo-router";
 import {
   Avatar,
@@ -77,6 +77,7 @@ const ComponentCardBoxShop2: React.FC = () => (
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
+    fontFamily: "sans-serif"
   },
   cardContent: {
     paddingHorizontal: 16,

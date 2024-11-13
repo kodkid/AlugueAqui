@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginHorizontal: 8,
+    fontFamily: "sans-serif"
   },
   paragraph: {
     fontStyle: "italic",

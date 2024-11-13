@@ -1,11 +1,9 @@
 import React from "react";
-import { View, StyleSheet, Dimensions } from "react-native";
-
+import { View, StyleSheet, Dimensions, Text } from "react-native";
 
 import ComponentCardShop from "../../../components/ComponentCardShop1";
 import ComponentCardBox2 from "../../../components/ComponentCardBox2";
-import ComponentCardBox3 from "../../../components/ComponentCardBox3";
-
+import ComponentCardBox3 from "../../../components/ComponentCarrinho2";
 const ShopItem1 = require("../../../../assets/icon.png");
 
 const windowWidth = Dimensions.get("window").width;
@@ -13,7 +11,6 @@ const windowWidth = Dimensions.get("window").width;
 export default function ShopItemLayout() {
   return (
     <View style={styles.container}>
-      
       <View style={styles.header}>
         <ComponentCardShop />
       </View>

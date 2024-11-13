@@ -15,6 +15,9 @@ export default function Home({}) {
         options={{
           headerShown: true,
           headerLeft: () => <DrawerToggleButton />,
+          headerTitleStyle: {
+            color: "#FFB800"
+          },
         }}
       />
       <View style={styles.potTitle}>

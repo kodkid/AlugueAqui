@@ -10,6 +10,9 @@ export default function TabLayout() {
         options={{
           drawerLabel: "Home",
           title: "Home",
+          headerTitleStyle: {
+            color: "#FFB800"
+          },
           drawerIcon: ({ size, color }) => (
             <Ionicons name="home" size={size} color={color} />
           ),
@@ -23,6 +26,9 @@ export default function TabLayout() {
           drawerIcon: ({ size, color }) => (
             <FontAwesome6 name="truck-front" size={size} color={color} />
           ),
+          headerTitleStyle: {
+            color: "#FFB800"
+          }
         }}
       />
       <Drawer.Screen
@@ -33,6 +39,9 @@ export default function TabLayout() {
           drawerIcon: ({ size, color }) => (
             <MaterialIcons name="shopping-cart" size={size} color={color} />
           ),
+          headerTitleStyle: {
+            color: "#FFB800"
+          }
         }}
       />
       <Drawer.Screen
@@ -43,6 +52,9 @@ export default function TabLayout() {
           drawerIcon: ({ size, color }) => (
             <Ionicons name="settings-sharp" size={size} color={color} />
           ),
+          headerTitleStyle: {
+            color: "#FFB800"
+          }
         }}
       />
       <Drawer.Screen
@@ -54,6 +66,9 @@ export default function TabLayout() {
           drawerIcon: ({ size, color }) => (
             <MaterialIcons name="exit-to-app" size={size} color={color} />
           ),
+          headerTitleStyle: {
+            color: "#FFB800"
+          }
         }}
       />
     </Drawer>

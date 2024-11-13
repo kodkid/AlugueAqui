@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 16,
     color: "#FFB800",
+    fontFamily: "sans-serif"
   },
 });
 

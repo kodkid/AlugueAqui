@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     textInput: {
         borderBottomColor: '#ffb800', 
         borderBottomWidth: 1, 
-        padding: 10, 
+        padding: 10,
+        fontFamily: "sans-serif"
     },
 });
 

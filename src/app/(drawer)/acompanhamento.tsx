@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { Drawer } from "expo-router/drawer";
 import { DrawerToggleButton } from "@react-navigation/drawer";
 
-export default function Carrinho() {
+export default function Acompanhamento() {
   return (
     <View style={styles.container}>
       <Drawer.Screen

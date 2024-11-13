@@ -5,8 +5,9 @@ import {
   ImageBackground,
   Image,
   Pressable,
+  Text,
 } from "react-native";
-import { router, Link } from "expo-router";
+import { router } from "expo-router";
 import ComponentTitle2 from "../components/ComponentTitle2";
 const Logo = require("../../assets/images/alugue-aqui-logo-2.png");
 const Bg = require("../../assets/images/index-bg.jpg");
@@ -27,11 +28,9 @@ export default function Index({}) {
             <ComponentTitle2 title="Aqui você pode" />
             <ComponentTitle2 title="alugar é arrendar" />
           </View>
-          <View style={styles.potButtom}>
-            <Pressable onPress={NavigateLogin}>
-              <Link href={"login"}> Entrar</Link>
-            </Pressable>
-          </View>
+          <Pressable style={styles.potButtom} onPress={NavigateLogin}>
+            <Text style={styles.buttonText}>Entrar</Text>
+          </Pressable>
         </View>
       </View>
     </ImageBackground>
@@ -43,6 +42,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    fontFamily: "sans-serif",
   },
   containerIndex: {
     justifyContent: "center",
@@ -57,7 +57,6 @@ const styles = StyleSheet.create({
   potImage: {
     flex: 1 / 3,
     alignItems: "center",
-
     marginEnd: 8,
   },
   potTitle: {
@@ -75,11 +74,17 @@ const styles = StyleSheet.create({
   potButtom: {
     justifyContent: "center",
     alignItems: "center",
-    gap: 4,
     margin: 16,
     marginEnd: 16,
     borderWidth: 2,
     borderRadius: 16,
+    borderColor: "#000", // Borda preta
+    backgroundColor: "#fff", // Fundo branco
+    padding: 12, // Ajusta o tamanho do botão
   },
-  buttom: {},
+  buttonText: {
+    fontSize: 18,
+    color: "#000", // Cor do texto
+    fontWeight: "bold",
+  },
 });
