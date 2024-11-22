@@ -40,7 +40,7 @@ export default function Login({}) {
             textColor="#fff"
             onPress={RedirecionamentoHome}
           >
-            Login
+            Cadastre-se
           </Button>
 
           <Text style={styles.text}>
