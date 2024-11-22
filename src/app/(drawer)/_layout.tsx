@@ -18,19 +18,7 @@ export default function TabLayout() {
           ),
         }}
       />
-      <Drawer.Screen
-        name="acompanhamento"
-        options={{
-          drawerLabel: "Acompanhamento",
-          title: "Acompanhamento",
-          drawerIcon: ({ size, color }) => (
-            <FontAwesome6 name="truck-front" size={size} color={color} />
-          ),
-          headerTitleStyle: {
-            color: "#FFB800"
-          }
-        }}
-      />
+      
       <Drawer.Screen
         name="index"
         options={{
