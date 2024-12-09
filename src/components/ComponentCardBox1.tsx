@@ -55,8 +55,8 @@ const ComponentCardBoxShop: React.FC = () => (
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#FBF7EC",
-    fontFamily: "sans-serif"
+    backgroundColor: "#fff",
+    fontFamily: "sans-serif",
   },
   cardContent: {
     flexDirection: "row",

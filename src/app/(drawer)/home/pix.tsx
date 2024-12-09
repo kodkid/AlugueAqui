@@ -1,26 +1,34 @@
 import React from "react";
-import { StyleSheet, Text, View, Alert } from "react-native";
+import { StyleSheet, Text, View, Alert, Dimensions } from "react-native";
 import { Button } from "react-native-paper";
 
-import PseudoText2 from "../../../components/PseudoTex2";
 import ComponentTitle5 from "../../../components/ComponentTitle5";
+
+// Pegando as dimensões da tela
+const { width, height } = Dimensions.get("window");
 
 export default function Boleto() {
   return (
     <View style={styles.container}>
       <View style={styles.part}>
-        <View style={styles.potTItle}>
+        <View style={styles.potTitle}>
           <Text style={styles.title}>Pix</Text>
         </View>
-        <PseudoText2 />
+        <Text style={styles.paragraph}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          porta efficitur sem nec interdum. Suspendisse potenti. Sed maximus
+          {""}
+        </Text>
       </View>
-      <View style={styles.part}>
+
+      {/* Box centralizada */}
+      <View style={styles.bottomContent}>
         <View style={styles.containCenter}>
-          <ComponentTitle5 title="40.028.922/0001-42"/>
-          <Text style={styles.typePix}> Tipo CNPJ</Text>
+          <ComponentTitle5 title="40.028.922/00001-42" />
+          <Text style={styles.cnpj}>Tipo CNPJ</Text>
         </View>
-      </View>
-      <View style={styles.part}>
+
+        {/* Botões */}
         <View style={styles.buttonsContainer}>
           <Button
             style={styles.buttom1}
@@ -31,6 +39,15 @@ export default function Boleto() {
           >
             Copiar Codigo
           </Button>
+          <Button
+            style={styles.buttom2}
+            mode="outlined"
+            buttonColor="#fff"
+            textColor="#FFB800"
+            onPress={() => Alert.alert("Email enviado")}
+          >
+            Enviar codigo via-email
+          </Button>
         </View>
       </View>
     </View>
@@ -39,40 +56,69 @@ export default function Boleto() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#fff",
-    flex: 1, // Faz o contêiner preencher toda a tela
-    flexDirection: "column", // Alinha os filhos em coluna (padrão)
+    backgroundColor: "#201b2c",
+    flex: 1, // O container ocupa toda a tela
+    justifyContent: "center", // Centraliza o conteúdo verticalmente
+    alignItems: "center", // Centraliza o conteúdo horizontalmente
+    // Para garantir que o conteúdo não encoste nas bordas da tela
   },
   part: {
-    flex: 1,
+    marginBottom: 4,
     justifyContent: "center",
+    width: "100%", // A largura ocupa 100% da tela
   },
-  potTItle: {
-    marginHorizontal: 16,
+  potTitle: {
+    marginBottom: 4,
   },
   title: {
-    fontSize: 18,
+    fontSize: 22,
     fontWeight: "bold",
+    color: "#ffb800",
+    position: "relative",
+    left: 28,
+    textAlign: "left",
   },
   typePix: {
     fontStyle: "italic",
-    color: "#665E66",
+    color: "#fff",
   },
   containCenter: {
     alignItems: "center",
   },
   buttonsContainer: {
-    marginTop: 32,
+    marginTop: 16,
     alignItems: "center",
-    width: "100%", // Faz os botões ocuparem a largura total do contêiner
+    width: "100%",
   },
   buttom1: {
     marginTop: 8,
-    width: "90%",
+    width: width * 0.9, // 90% da largura da tela
   },
   buttom2: {
     marginTop: 8,
-    width: "90%",
+    width: width * 0.9, // 90% da largura da tela
     borderColor: "#FFB800",
+  },
+  paragraph: {
+    fontStyle: "italic",
+    color: "#fff",
+    textAlign: "center", // Centraliza o parágrafo
+    marginVertical: 8, // Espaço entre o parágrafo e outros elementos
+  },
+  cnpj: {
+    fontStyle: "italic",
+    color: "#a1a1a1",
+    textAlign: "center", // Centraliza o parágrafo
+    marginVertical: 8, // Espaço entre o parágrafo e outros elementos
+  },
+  bottomContent: {
+    width: "100%", // Garantir que a largura da box seja 90% da tela
+    height: "60%",
+    maxWidth: 400, // Limita a largura máxima da box para não ficar muito larga em telas grandes
+    backgroundColor: "#fff",
+    padding: 16, // Espaçamento interno
+    borderRadius: 10, // Adicionando borda arredondada
+    alignItems: "center", // Centraliza os itens dentro da box
+    justifyContent: "center", // Centraliza os itens verticalmente
   },
 });

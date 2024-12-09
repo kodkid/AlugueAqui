@@ -9,7 +9,7 @@ import ComponentTextInputPassword from "../../components/ComponentTextInputPassw
 
 const Logo = require("../../../assets/images/alugue-aqui-logo-2.png");
 
-const RedirecionamentoHome = () => router.push("/(drawer)/home");
+const redirectHome = () => router.push("/(drawer)/home");
 export default function Login({}) {
   return (
     <View style={styles.container}>
@@ -38,9 +38,9 @@ export default function Login({}) {
             mode="elevated"
             buttonColor="#FFB800"
             textColor="#fff"
-            onPress={RedirecionamentoHome}
+            onPress={redirectHome}
           >
-            Cadastre-se
+            Entrar
           </Button>
 
           <Text style={styles.text}>

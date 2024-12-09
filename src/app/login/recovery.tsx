@@ -54,5 +54,4 @@ const styles = StyleSheet.create({
   buttom: {
     marginTop: 8,
   },
-
 });

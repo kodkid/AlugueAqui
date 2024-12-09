@@ -5,8 +5,8 @@ import { Drawer } from "expo-router/drawer";
 import { DrawerToggleButton } from "@react-navigation/drawer";
 
 import ComponentCardBoxShop from "../../../components/ComponentCardBox1";
-import ComponentTitle from "../../../components/ComponentTitle";
-import ComponentText from "../../../components/ComponentText";
+import ComponentTitle7 from "../../../components/ComponentTitle7";
+import ComponentTitle6 from "../../../components/ComponentTitle6";
 
 export default function Home({}) {
   return (
@@ -16,13 +16,13 @@ export default function Home({}) {
           headerShown: true,
           headerLeft: () => <DrawerToggleButton />,
           headerTitleStyle: {
-            color: "#FFB800"
+            color: "#FFB800",
           },
         }}
       />
       <View style={styles.potTitle}>
-        <ComponentTitle title="Ofertas em destaque" />
-        <ComponentText title=" os melhores preços" />
+        <ComponentTitle7 title="Ofertas em destaque" />
+        <ComponentTitle6 title=" os melhores preços" />
       </View>
       {/* Final do potTitle*/}
       <View style={styles.potCard}>
@@ -38,7 +38,7 @@ export default function Home({}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#201b2c",
     justifyContent: "flex-start",
     paddingTop: 16,
     paddingHorizontal: 8,

@@ -1,11 +1,12 @@
 -- Criação do banco de dados
-CREATE DATABASE db_alugue_aqui2;
+DROP DATABASE IF EXISTS db_alugue_aqui2;
+CREATE DATABASE IF NOT EXISTS db_alugue_aqui2;
 
 -- Uso do banco de dados criado
 USE db_alugue_aqui2;
 
 -- Criação da tabela usuarios
-CREATE TABLE db_alugue_aqui2.usuarios (
+CREATE TABLE IF NOT EXISTS db_alugue_aqui2.usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     primeiro_nome VARCHAR(50) NOT NULL,
     sobrenome VARCHAR(50) NOT NULL,
@@ -48,7 +49,7 @@ INSERT INTO db_alugue_aqui2.usuarios (
 
 
 -- Criação da tabela anuncios
-CREATE TABLE db_alugue_aqui2.anuncios (
+CREATE TABLE IF NOT EXISTS db_alugue_aqui2.anuncios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id INT NOT NULL,  
     titulo VARCHAR(255) NOT NULL,
@@ -103,7 +104,7 @@ INSERT INTO db_alugue_aqui2.anuncios (
 
 
 -- Criação da tabela carrinho com a nova coluna chave_pix
-CREATE TABLE db_alugue_aqui2.carrinho (
+CREATE TABLE IF NOT EXISTS db_alugue_aqui2.carrinho (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id INT NOT NULL,
     anuncio_id INT NOT NULL,
@@ -146,7 +147,7 @@ CREATE TABLE IF NOT EXISTS db_alugue_aqui2.cartoes (
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE
 );
 
-CREATE TABLE db_alugue_aqui2.pix (
+CREATE TABLE IF NOT EXISTS db_alugue_aqui2.pix (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id INT NOT NULL,
     tipo_chave VARCHAR(50) NOT NULL,
@@ -173,7 +174,7 @@ INSERT INTO db_alugue_aqui2.pix (
 -- Chave PIX para o Usuário Eduardo Mendes (id = 5)
 (5, 'CNPJ', '12345678000275', 'Eduardo Mendes');
 
-CREATE TABLE db_alugue_aqui2.conta_bancaria (
+CREATE TABLE IF NOT EXISTS db_alugue_aqui2.conta_bancaria (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id INT NOT NULL,
     agencia VARCHAR(10) NOT NULL,

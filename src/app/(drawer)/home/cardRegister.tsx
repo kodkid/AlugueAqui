@@ -1,47 +1,52 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { router, Link } from "expo-router";
+import { StyleSheet, Text, View, Alert } from "react-native";
+import { router } from "expo-router";
 import { Button } from "react-native-paper";
 import ComponentTitleSmall from "../../../components/ComponentTitleSmall";
 import ComponentTextInput from "../../../components/ComponentTextInput";
 
-export default function CardRegister({}) {
+export default function CardRegister() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Cadastrar Cartão</Text>
       <View style={styles.registerPanel}>
-        <ComponentTitleSmall title="Número Do Cartão" />
-        <ComponentTextInput placeholder="Número do Cartão" />
+        {/* Bloco branco para o formulário */}
+        <View style={styles.inputBlock}>
+          <ComponentTitleSmall title="Número Do Cartão" />
+          <ComponentTextInput placeholder="Número do Cartão" />
 
-        <View style={styles.inlineContainer}>
-          <View style={styles.inlineInput}>
-            <ComponentTitleSmall title="Validade" />
-            <ComponentTextInput style={styles.smallInput} placeholder="MM/AA" />
+          <View style={styles.inlineContainer}>
+            <View style={styles.inlineInput}>
+              <ComponentTitleSmall title="Validade" />
+              <ComponentTextInput
+                style={styles.smallInput}
+                placeholder="MM/AA"
+              />
+            </View>
+            <View style={styles.inlineInput}>
+              <ComponentTitleSmall title="CVC" />
+              <ComponentTextInput style={styles.smallInput} placeholder="CVC" />
+            </View>
           </View>
-          <View style={styles.inlineInput}>
-            <ComponentTitleSmall title="CVC" />
-            <ComponentTextInput style={styles.smallInput} placeholder="CVC" />
-          </View>
+
+          <ComponentTitleSmall title="Titular do cartão" />
+          <ComponentTextInput placeholder="Titular do cartão" />
+
+          <ComponentTitleSmall title="CPF do titular" />
+          <ComponentTextInput placeholder="CPF do titular" />
         </View>
 
-        <ComponentTitleSmall title="Titular do cartão" />
-        <ComponentTextInput placeholder="Titular do cartão" />
-        <ComponentTitleSmall title="CPF do titular" />
-        <ComponentTextInput placeholder="CPF do titular" />
-
+        {/* Botão de registrar */}
         <Button
           style={styles.button}
           icon="registered-trademark"
           mode="elevated"
           buttonColor="#FFB800"
           textColor="#fff"
-          onPress={() => router.push("/")}
+          onPress={() => Alert.alert("Cartão cadastrado")}
         >
           Registrar
         </Button>
-
-        <View style={styles.textPanel}>
-        </View>
       </View>
     </View>
   );
@@ -50,21 +55,30 @@ export default function CardRegister({}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#201b2c",
     justifyContent: "center",
     paddingHorizontal: 16,
-    fontFamily: "sans-serif",
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
-    position: 'absolute',
-    top: 10, // Ajuste a posição conforme necessário
-    left: 16,
-    marginTop: 60
+    textAlign: "left",
+    position: "relative",
+    color: "#ffb800",
   },
   registerPanel: {
-    marginTop: 40, // Ajuste conforme necessário para posicionar abaixo do título
+    marginTop: 40,
+  },
+  inputBlock: {
+    backgroundColor: "#fff",
+    padding: 20,
+    borderRadius: 10,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 5,
+    marginBottom: 20,
   },
   inlineContainer: {
     flexDirection: "row",
@@ -81,12 +95,4 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 16,
   },
-  textPanel: {
-    alignSelf: "flex-start",
-    marginTop: 16,
-  },
-  link: {
-    color: "#FFB800",
-  },
 });
-
